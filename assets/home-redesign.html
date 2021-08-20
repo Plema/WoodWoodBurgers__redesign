@@ -1,5 +1,3 @@
-
-  
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -10,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css" data-inprogress="">
-    <link rel="stylesheet" href="../css/home.min.css" data-inprogress="">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <link rel="stylesheet" href="../css/home.css" data-inprogress="">
 
 </head>
 
@@ -21,45 +18,13 @@
         <!-- /build -->
         <include src="assets/templates/pop-up.html"></include>
         <main class="main">
-            <!-- build:section layout.header-->
-            <!-- /build -->
-            <include src="assets/templates/header.html"></include>
-            <div class="scroll-header">
-                <!-- build:section layout.header_reguest-->
-            <!-- /build --> 
-            <include src="assets/templates/header-reguest.html"></include>
-            
-            </div>
 
-            <section class="section section-banner">
-                <div class="list-item" style="background-image: url(../img/banner.jpg);">
-                    <div class="container">
-                        <div class="heading">
-                            <h1>КУПИ БУРГЕР
-                                ОН ЖЕ ТАКОЙ
-                                ВКУСНЫЙ
-                            </h1>
-                            <span class="description">Техасский
-                                бро<span>220&#8381;</span></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="list-item" style="background-image: url(../img/banner.jpg);">
-                    <div class="container">
-                        <div class="heading">
-                            <h1>КУПИ БУРГЕР
-                                ОН ЖЕ ТАКОЙ
-                                ВКУСНЫЙ 2
-                            </h1>
-                            <span class="description">Техасский
-                                бро<span>220&#8381;</span></span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <!-- build:section layout.header_reguest-->
+            <!-- /build -->
+
             <div class="container">
                 <section class="section section-product" id='anchor'>
-                    <div class="heading">
+                    <div class="heading home">
                         <h2>Бургеры</h2>
                     </div>
                     <div class="list list-md">
@@ -79,12 +44,13 @@
                                         халапеньо
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                                 <div class="mark">
                                     <span style="background-image: url(../img/mark-1.svg);"></span>
                                 </div>
                             </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Чизбургер с котлетой
+                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Чизбургер
+                                с котлетой
                                 из индейки</h3>
                             <p>
                                 Белая булка, маринованы огурцы,
@@ -94,7 +60,11 @@
                             </p>
                             <div class="item-footer">
                                 <span class="price">320 р.</span>
-                                <a href="javascript:void(0);" class="add btn">Добавить</a>
+                                <div class="number">
+                                    <span class="minus"></span>
+                                    <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                                    <span class="plus show-options"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="list-item">
@@ -108,7 +78,7 @@
                                         майонез
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                                 <div class="mark">
                                     <span style="background-image: url(../img/mark-2.svg);"></span>
                                 </div>
@@ -125,7 +95,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +111,7 @@
                                         луковый мармелад, халапеньо
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                             </div>
                             <h3 class="title"><a href="card-product.html" class="link-page"></a>Техасский бро</h3>
                             <p>
@@ -156,7 +126,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +141,7 @@
                                         майонез
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                             </div>
                             <h3 class="title"><a href="card-product.html" class="link-page"></a>Дабл блючиз</h3>
                             <p>
@@ -185,7 +155,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -201,7 +171,7 @@
                                         луковый мармелад, халапеньо
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                                 <div class="mark">
                                     <span style="background-image: url(../img/mark-4.svg);"></span>
                                 </div>
@@ -219,7 +189,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +204,7 @@
                                         майонез
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                             </div>
                             <h3 class="title"><a href="card-product.html" class="link-page"></a>Дабл блючиз</h3>
                             <p>
@@ -248,7 +218,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +239,7 @@
                                 </a>
                                 <a href="card-product.html" class="link-card"></a>
                             </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Лимон-мята</h3>
+                            <h3 class="title"><a href="card-product.html" class="link-page"></a>>Лимон-мята</h3>
                             <p>
                                 Лимонад
                             </p>
@@ -370,7 +340,7 @@
                                         буффало, свежий базилик
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                                 <div class="mark">
                                     <span style="background-image: url(../img/mark-5.svg);"></span>
                                 </div>
@@ -399,7 +369,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -414,7 +384,7 @@
                                         пармезан, лук порей
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                                 <div class="mark">
                                     <span style="background-image: url(../img/mark-6.svg);"></span>
                                     <span style="background-image: url(../img/mark-7.svg);"></span>
@@ -448,7 +418,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -462,7 +432,7 @@
                                         Залапеньо
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                             </div>
                             <h3 class="title"><a href="card-product.html" class="link-page"></a>Папперони</h3>
                             <div class="item-content">
@@ -489,7 +459,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -502,7 +472,7 @@
                                         и орегано
                                     </p>
                                 </a>
-                                <a href="card-product.html" class="link-card"></a>
+                                <a href="javascript:void(0);" class="show-options link-card"></a>
                             </div>
                             <h3 class="title"><a href="card-product.html" class="link-page"></a>Фокачча</h3>
                             <div class="item-content">
@@ -516,7 +486,7 @@
                                 <div class="number">
                                     <span class="minus"></span>
                                     <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus"></span>
+                                    <span class="plus show-options"></span>
                                 </div>
                             </div>
                         </div>
@@ -716,11 +686,9 @@
                         </div>
                     </div>
                 </section>
-
-
+               
                 <!-- build:section layout.footer-->
                 <!-- /build -->
-            <include src="assets/templates/footer.html"></include>
 
             </div>
         </main>
@@ -730,15 +698,13 @@
 
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="../js/jquery.ui.touch-punch.min.js"></script>
     <script src="../js/inputmask.js"></script>
     <script src="../js/jcf.min.js"></script>
-    <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/main.min.js"></script>
     <script src="../js/home.min.js"></script>
 
 
 </html>
-
