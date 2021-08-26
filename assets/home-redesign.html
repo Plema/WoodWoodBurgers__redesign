@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css" data-inprogress="">
-    <link rel="stylesheet" href="../css/home.css" data-inprogress="">
+    <!-- <link rel="stylesheet" href="../css/home.css" data-inprogress=""> -->
+    <link rel="stylesheet" href="../css/home-redesign.min.css" data-inprogress="">
 
 </head>
 
@@ -23,205 +24,67 @@
             <!-- /build -->
 
             <div class="container">
-                <section class="section section-product" id='anchor'>
-                    <div class="heading home">
+                <section class="section section-product  section-product__new" id='anchor'>
+                    <div class="title">
                         <h2>Бургеры</h2>
                     </div>
-                    <div class="list list-md">
-                        <div class="list-item">
-                            <div class="item-image" style="background-image: url(../img/img-1.jpg);">
-                                <span class="close"></span>
-                                <a href="javascript:void(0);" class="link-page">
-                                    <p>
-                                        Черная булка,
-                                        жареный бекон,
-                                        руккола, печеный
-                                        помидор, сыр чеддер,
-                                        котлетаиз говядины
-                                        dry age, соус BBQ,
-                                        горчичный соус,
-                                        луковый мармелад,
-                                        халапеньо
-                                    </p>
-                                </a>
-                                <a href="javascript:void(0);" class="show-options link-card"></a>
-                                <div class="mark">
-                                    <span style="background-image: url(../img/mark-1.svg);"></span>
+                    <div class="product-list">
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="list-item__img" >
+                                    <a href="card-product-new.html" class="desription-img__link"><img src="../img/img-1.jpg" alt="burger"></a>
                                 </div>
-                            </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Чизбургер
-                                с котлетой
-                                из индейки</h3>
-                            <p>
-                                Белая булка, маринованы огурцы,
-                                сыр чеддер, котлета из говядины
-                                dry age, сырный соус, чили
-                                майонез
-                            </p>
-                            <div class="item-footer">
-                                <span class="price">320 р.</span>
-                                <div class="number">
-                                    <span class="minus"></span>
-                                    <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus show-options"></span>
+                                <div class="list-item__desription">
+                                    <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Чизбургер с котлетой из индейки</p></a>
+                                    <p class="desription-price">320руб.</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="item-image" style="background-image: url(../img/img-2.jpg);">
-                                <span class="close"></span>
-                                <a href="javascript:void(0);" class="link-page">
-                                    <p>
-                                        Белая булка, маринованы огурцы,
-                                        сыр чеддер, котлета из говядины
-                                        dry age, сырный соус, чили
-                                        майонез
-                                    </p>
-                                </a>
-                                <a href="javascript:void(0);" class="show-options link-card"></a>
-                                <div class="mark">
-                                    <span style="background-image: url(../img/mark-2.svg);"></span>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__img" >
+                                    <img src="../img/img-2.jpg" alt="burger">
                                 </div>
-                            </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Чизбургер</h3>
-                            <p>
-                                Белая булка, маринованы огурцы,
-                                сыр чеддер, котлета из говядины
-                                dry age, сырный соус, чили
-                                майонез
-                            </p>
-                            <div class="item-footer">
-                                <span class="price">350 р.</span>
-                                <div class="number">
-                                    <span class="minus"></span>
-                                    <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus show-options"></span>
+                                <div class="list-item__desription">
+                                    <p class="desription-title">Чизбургер</p>
+                                    <a href="" class="desription-link"><p class="desription-link__text">320руб.</p></a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="item-image" style="background-image: url(../img/img-3.jpg);">
-                                <span class="close"></span>
-                                <a href="javascript:void(0);" class="link-page">
-                                    <p>
-                                        Черная булка, жареный бекон,
-                                        руккола, печеный помидор, сыр
-                                        чеддер, котлета из говядины dry
-                                        age, соус BBQ, горчичный соус,
-                                        луковый мармелад, халапеньо
-                                    </p>
-                                </a>
-                                <a href="javascript:void(0);" class="show-options link-card"></a>
-                            </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Техасский бро</h3>
-                            <p>
-                                Черная булка, жареный бекон,
-                                руккола, печеный помидор, сыр
-                                чеддер, котлета из говядины dry
-                                age, соус BBQ, горчичный соус,
-                                луковый мармелад, халапеньо
-                            </p>
-                            <div class="item-footer">
-                                <span class="price">320 р.</span>
-                                <div class="number">
-                                    <span class="minus"></span>
-                                    <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus show-options"></span>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__img" >
+                                    <img src="../img/img-3.jpg" alt="burger">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="item-image" style="background-image: url(../img/img-4.jpg);">
-                                <span class="close"></span>
-                                <a href="javascript:void(0);" class="link-page">
-                                    <p>
-                                        Белая булка, маринованы огурцы,
-                                        сыр чеддер, котлета из говядины
-                                        dry age, сырный соус, чили
-                                        майонез
-                                    </p>
-                                </a>
-                                <a href="javascript:void(0);" class="show-options link-card"></a>
-                            </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Дабл блючиз</h3>
-                            <p>
-                                Белая булка, маринованы огурцы,
-                                сыр чеддер, котлета из говядины
-                                dry age, сырный соус, чили
-                                майонез
-                            </p>
-                            <div class="item-footer">
-                                <span class="price">370 р.</span>
-                                <div class="number">
-                                    <span class="minus"></span>
-                                    <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus show-options"></span>
+                                <div class="list-item__desription">
+                                    <p class="desription-title">Техасский бро</p>
+                                    <a href="" class="desription-link"><p class="desription-link__text">320руб.</p></a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="item-image" style="background-image: url(../img/img-13.jpg);">
-                                <span class="close"></span>
-                                <a href="javascript:void(0);" class="link-page">
-                                    <p>
-                                        Черная булка, жареный бекон,
-                                        руккола, печеный помидор, сыр
-                                        чеддер, котлета из говядины dry
-                                        age, соус BBQ, горчичный соус,
-                                        луковый мармелад, халапеньо
-                                    </p>
-                                </a>
-                                <a href="javascript:void(0);" class="show-options link-card"></a>
-                                <div class="mark">
-                                    <span style="background-image: url(../img/mark-4.svg);"></span>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__img" >
+                                    <img src="../img/img-4.jpg" alt="burger">
                                 </div>
-                            </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Техасский бро</h3>
-                            <p>
-                                Черная булка, жареный бекон,
-                                руккола, печеный помидор, сыр
-                                чеддер, котлета из говядины dry
-                                age, соус BBQ, горчичный соус,
-                                луковый мармелад, халапеньо
-                            </p>
-                            <div class="item-footer">
-                                <span class="price">320 р.</span>
-                                <div class="number">
-                                    <span class="minus"></span>
-                                    <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus show-options"></span>
+                                <div class="list-item__desription">
+                                    <p class="desription-title">Дабл блючиз</p>
+                                    <a href="" class="desription-link"><p class="desription-link__text">320руб.</p></a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="list-item">
-                            <div class="item-image" style="background-image: url(../img/img-14.jpg);">
-                                <span class="close"></span>
-                                <a href="javascript:void(0);" class="link-page">
-                                    <p>
-                                        Белая булка, маринованы огурцы,
-                                        сыр чеддер, котлета из говядины
-                                        dry age, сырный соус, чили
-                                        майонез
-                                    </p>
-                                </a>
-                                <a href="javascript:void(0);" class="show-options link-card"></a>
-                            </div>
-                            <h3 class="title"><a href="card-product.html" class="link-page"></a>Дабл блючиз</h3>
-                            <p>
-                                Белая булка, маринованы огурцы,
-                                сыр чеддер, котлета из говядины
-                                dry age, сырный соус, чили
-                                майонез
-                            </p>
-                            <div class="item-footer">
-                                <span class="price">370 р.</span>
-                                <div class="number">
-                                    <span class="minus"></span>
-                                    <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                    <span class="plus show-options"></span>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__img" >
+                                    <img src="../img/img-13.jpg" alt="burger">
                                 </div>
-                            </div>
-                        </div>
+                                <div class="list-item__desription">
+                                    <p class="desription-title">Техасский бро</p>
+                                    <a href="" class="desription-link"><p class="desription-link__text">320руб.</p></a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="list-item__img" >
+                                    <img src="../img/img-14.jpg" alt="burger">
+                                </div>
+                                <div class="list-item__desription">
+                                    <p class="desription-title">Дабл блючиз</p>
+                                    <a href="" class="desription-link"><p class="desription-link__text">320руб.</p></a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </section>
                 <section class="section section-product" id='anchor3'>
