@@ -1,17 +1,15 @@
-@import "libs/header";
-@import "libs/footer";
-@import "libs/fonts.scss";
-@import "libs/fontello.scss";
+@import 'libs/header';
+@import 'libs/footer';
+@import 'libs/fonts.scss';
+@import 'libs/fontello.scss';
 @import 'libs/section.scss';
 @import 'libs/button.scss';
 @import 'libs/pop-up.scss';
 @import 'libs/normalize.scss';
-@import "mCustomScrollbar.css";
-
-
+@import 'mCustomScrollbar.css';
 
 :root {
-  --Color-yellow: #ffb100;
+  --Color-yellow: #f2b03d;
   --Color-black: #000;
 }
 
@@ -100,7 +98,7 @@ a {
   height: 100%;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -115,7 +113,7 @@ ol li {
 
 .clearfix {
   &:after {
-    content: " ";
+    content: ' ';
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -170,7 +168,6 @@ h5 {
   font-family: 'CartographSansCF-Medium';
   word-break: break-word;
 }
-
 
 .active {
   display: block;
