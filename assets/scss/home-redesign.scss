@@ -244,6 +244,7 @@ a {
           box-shadow: none;
           transition: all 0.7s;
           &__burgers:hover {
+            height: fit-content;
             box-shadow: 5px 6px 12px rgba(0, 0, 0, 0.55);
             background-color: #fcfaf2;
             transition: all 0.7s;
