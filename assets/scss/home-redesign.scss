@@ -388,6 +388,33 @@ a {
               font-size: 26px;
               text-align: left;
               margin-left: 8px;
+              position: relative;
+              &__turkey {
+                position: relative;
+                &::before {
+                  content: '';
+                  background-image: url(../img/turkey-icon.svg);
+                  background-repeat: no-repeat;
+                  width: 30px;
+                  height: 30px;
+                  position: absolute;
+                  top: 5px;
+                  right: 13px;
+                }
+              }
+              &__beef {
+                position: relative;
+                &::before {
+                  content: '';
+                  background-image: url(../img/beef-icon.svg);
+                  background-repeat: no-repeat;
+                  width: 30px;
+                  height: 30px;
+                  position: absolute;
+                  top: 5px;
+                  right: 13px;
+                }
+              }
             }
             .add-ingrediets {
               display: flex;
