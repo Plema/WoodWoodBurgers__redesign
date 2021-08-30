@@ -143,6 +143,7 @@ $(document).ready(function () {
     $('.modall').removeClass('active-modall');
     $('.modall-recommend-to-order').addClass('active-modall');
     $('.body').addClass('showing-modal');
+    $('.skip-button').removeClass('active-modall');
   });
   $('.modall-recommend-to-order').on('click', function () {
     $('.modall').removeClass('active-modall');
