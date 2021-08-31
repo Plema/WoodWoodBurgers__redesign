@@ -28,6 +28,7 @@
     overflow: auto;
     max-height: 100%;
     border-radius: 10px;
+    z-index: 100000;
 
     h4 {
       margin-top: 20px;
@@ -524,6 +525,7 @@
               }
             }
             .description__button {
+              cursor: pointer;
               width: 100%;
               // max-width: 166px;
               height: 36px;
@@ -541,6 +543,12 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              transition: all 0.7s;
+              &:hover,
+              &:focus {
+                background-color: #02a7a4;
+                color: #fff;
+              }
             }
           }
         }
@@ -854,6 +862,226 @@
         justify-content: flex-end;
         .skip-button {
           margin-right: 20px;
+        }
+      }
+    }
+  }
+  .modall-add-ingredients-product {
+    .modall-body {
+      align-items: flex-start;
+      padding: 25px 25px 0 55px;
+      width: 920px;
+      max-width: 920px;
+      min-height: 624px;
+      .product-name {
+        color: #000000;
+        font-family: 'CartographSansCF-Regular';
+        font-size: 24px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        margin-top: 18px;
+        margin-bottom: 30px;
+      }
+      .content-wrapper {
+        display: flex;
+        padding-bottom: 35px;
+        border-bottom: 2px solid #cccccc;
+        .slider-wrapper {
+          width: 313px;
+          margin-right: 55px;
+          .slider-big {
+            margin-bottom: 15px;
+          }
+        }
+        .description-product {
+          width: 447px;
+          .composition-wrapper {
+            margin-bottom: 30px;
+            .composition-title {
+              color: #808080;
+              font-family: 'CartographSansCF-Regular';
+              font-size: 16px;
+              font-weight: 500;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+              margin: 0 0 15px 0;
+              position: relative;
+              &::before {
+                position: absolute;
+                content: '';
+                width: 361px;
+                height: 2px;
+                transform: translate(0%, -50%);
+                bottom: 40%;
+                right: 0%;
+                background-color: #cccccc;
+              }
+            }
+            .composition-text {
+              font-family: 'CartographSansCF-Regular';
+              font-size: 17px;
+              font-weight: 500;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: 24px;
+              text-align: left;
+              margin: 0;
+            }
+          }
+          .add-wrapper {
+            .add-title {
+              color: #808080;
+              font-family: 'CartographSansCF-Regular';
+              font-size: 16px;
+              font-weight: 500;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+              margin: 0 0 15px 0;
+              position: relative;
+              &::before {
+                position: absolute;
+                content: '';
+                width: 342px;
+                height: 2px;
+                transform: translate(0%, -50%);
+                bottom: 40%;
+                right: 0%;
+                background-color: #cccccc;
+              }
+            }
+            .ingredients-list {
+              display: flex;
+              flex-wrap: wrap;
+              .ingredients-item {
+                display: flex;
+                align-items: center;
+                width: 50%;
+                position: relative;
+                margin-bottom: 22px;
+                &__title {
+                  font-family: 'CartographSansCF-Regular';
+                  font-size: 18px;
+                  font-weight: 500;
+                  font-style: normal;
+                  letter-spacing: normal;
+                  line-height: normal;
+                  text-align: left;
+                  margin-left: 15px;
+                  margin-right: 10px;
+                }
+                span.jcf-checkbox {
+                  min-width: 26px;
+                  height: 26px;
+                  border: 2px solid #000000;
+                  background-color: #ffffff;
+                  display: inline-flex;
+                  border-radius: 50%;
+                  justify-content: center;
+                  align-items: center;
+                  // margin-right: 17px;
+                  position: relative;
+                  transition: all 0.5s;
+                  &:hover {
+                    border: 2px solid var(--Color-yellow);
+                  }
+                  &:active {
+                    border: 2px solid #000000;
+                  }
+                  &.jcf-checked {
+                    span {
+                      width: 16px;
+                      height: 16px;
+                      background-color: #ffb100;
+                      border-radius: 50%;
+                    }
+                  }
+                }
+                &__price {
+                  color: #000000;
+                  font-family: 'CartographSansCF-Regular';
+                  font-size: 18px;
+                  font-weight: 700;
+                  font-style: normal;
+                  letter-spacing: normal;
+                  line-height: normal;
+                  text-align: left;
+                  margin: 0;
+                }
+              }
+            }
+            .total-wrapper {
+              width: 445px;
+              height: 46px;
+              border-radius: 10px;
+              background-color: #f8f1e6;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              padding: 9px 23px;
+              .total-title {
+                font-family: 'CartographSansCF-Regular';
+                font-size: 18px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                margin: 0 19px 0 0;
+              }
+              .total-count {
+                color: #f2b03d;
+                font-family: 'CartographSansCF-Regular';
+                font-size: 24px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: normal;
+                text-align: left;
+                margin: 0;
+                .count {
+                  font-size: 24px;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      .number-wrapper {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 30px 30px 5px;
+        .add-to-cart {
+          cursor: pointer;
+          width: 262px;
+          height: 50px;
+          border-radius: 20px;
+          background-color: #ffb100;
+          font-family: 'CartographSansCF-Regular';
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: center;
+          border: none;
+          outline: none;
+          margin-left: 69px;
+          transition: all 0.7s;
+          &:hover,
+          &:focus {
+            background-color: #e19209;
+          }
         }
       }
     }
