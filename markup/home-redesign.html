@@ -411,10 +411,112 @@
   </div>
 </div>
 
+<div class="modall modall-add-ingredients-product">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h2 class="product-name">Техасский бро</h2>
+    <div class="content-wrapper">
+      <div class="slider-wrapper">
+        <div class="slider-big">
+          <div class="slider-big__item">
+            <img src="img/cart-slide__1.png" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-1.jpg" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-2.jpg" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-3.jpg" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="slider-min">
+          <div class="slider-min__item">
+            <img src="img/cart-slide__1.png" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-1.jpg" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-2.jpg" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-3.jpg" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="description-product">
+        <div class="composition-wrapper">
+          <h3 class="composition-title">Состав</h3>
+          <p class="composition-text">
+            Черная булка, жареный бекон, руккола, печеный помидор, сырчеддер, котлета из говядины dry age, соус BBQ, горчичныйсоус, луковый
+            мармелад, халапеньо.
+          </p>
+        </div>
+        <div class="add-wrapper">
+          <h3 class="add-title">Добавить</h3>
+          <div class="ingredients-list">
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="cheese" name="cheese">
+              <label class="ingredients-item__title" for="cheese">Сыр</label>
+              <p class="ingredients-item__price"><span class="price">30</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="сutlet" name="cheese">
+              <label class="ingredients-item__title" for="сutlet">Котлета</label>
+              <p class="ingredients-item__price"><span class="price">75</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="onion" name="onion">
+              <label class="ingredients-item__title" for="onion">Лук</label>
+              <p class="ingredients-item__price"><span class="price">25</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="sauce" name="sauce">
+              <label class="ingredients-item__title" for="sauce">Соус</label>
+              <p class="ingredients-item__price"><span class="price">10</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="bun" name="bun">
+              <label class="ingredients-item__title" for="bun">Булочку</label>
+              <p class="ingredients-item__price"><span class="price">15</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input href="javascript:void(0)" type="checkbox" id="omelette" name="omelette">
+              <label class="ingredients-item__title" for="omelette">Омлет</label>
+              <p class="ingredients-item__price"><span class="price">40</span>р.</p>
+            </div>
+          </div>
+          <div class="total-wrapper">
+            <p class="total-title">Итого:</p>
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="number-wrapper">
+      <div class="number">
+        <span class="minus"></span>
+        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+        <span class="plus"></span>
+        <button class="add-to-cart">В корзину</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         <main class="main">
 
             <!-- build:section layout.header_reguest-->
             <!-- /build -->
+            <!-- <include src="assets/templates/header-reguest.html"></include> -->
 
             <div class="container">
                 <section class="section section-product  section-product__new" id="anchor">
@@ -431,7 +533,7 @@
                                     <div class="desription__title-wrapper  desription-title__turkey">
                                         <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Чизбургер с котлетой из индейки</p></a>
                                     </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers recommend-to-order">Добавить ингридиенты</button></div>
+                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
                                     <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
                                     <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
                                     <div class="number">
@@ -453,7 +555,7 @@
                                     <div class="desription__title-wrapper desription-title__beef">
                                         <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Чизбургер</p></a>
                                     </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers">Добавить ингридиенты</button></div>
+                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
                                     <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
                                     <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
                                     <div class="number">
@@ -475,7 +577,7 @@
                                     <div class="desription__title-wrapper desription-title__beef">
                                         <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Техасский бро</p></a>
                                     </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers">Добавить ингридиенты</button></div>
+                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
                                     <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
                                     <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
                                     <div class="number">
@@ -497,7 +599,7 @@
                                     <div class="desription__title-wrapper  desription-title__turkey">
                                         <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Дабл Блючиз</p></a>
                                     </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers">Добавить ингридиенты</button></div>
+                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
                                     <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
                                     <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
                                     <div class="number">
@@ -519,7 +621,7 @@
                                     <div class="desription__title-wrapper  desription-title__turkey">
                                         <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Американ Дрим</p></a>
                                     </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers">Добавить ингридиенты</button></div>
+                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
                                     <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
                                     <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
                                     <div class="number">
@@ -541,7 +643,7 @@
                                     <div class="desription__title-wrapper  desription-title__turkey">
                                         <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Джеквуд</p></a>
                                     </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers">Добавить ингридиенты</button></div>
+                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
                                     <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
                                     <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
                                     <div class="number">
@@ -1084,6 +1186,7 @@
     <script src="js/jcf.radio.min.js"></script>
     <script src="js/jcf.checkbox.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/slider-cart.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/home-redesign.min.js"></script>
     <script src="js/home.min.js"></script>
