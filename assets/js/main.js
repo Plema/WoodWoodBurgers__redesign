@@ -145,10 +145,18 @@ $(document).ready(function () {
     $('.body').addClass('showing-modal');
     $('.skip-button').removeClass('active-modall');
   });
-  $('.modall-recommend-to-order').on('click', function () {
-    $('.modall').removeClass('active-modall');
+  $('.skip-button').on('click', function () {
     $('.modall-recommend-to-order').removeClass('active-modall');
-    $('.body').removeClass('showing-modal');
+  });
+  $('.add-ingredients-product').on('click', function () {
+    $('.modall').removeClass('active-modall');
+    $('.modall-add-ingredients-product').addClass('active-modall');
+    $('.body').addClass('showing-modal');
+    $('.slider-big').slick('setPosition');
+    $('.slider-min').slick('setPosition');
+  });
+  $('.add-to-cart').on('click', function () {
+    $('.modall-add-ingredients-product').removeClass('active-modall');
   });
 
   jQuery('.only_number').keypress(function (e) {
