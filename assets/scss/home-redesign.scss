@@ -265,6 +265,11 @@ a {
             }
             .add-ingrediets {
               background-color: #f2b03d;
+              &:hover,
+              &:focus {
+                background-color: #e19209;
+                color: #fff;
+              }
             }
             .number {
               display: flex;
@@ -303,6 +308,11 @@ a {
             }
             .add-ingrediets {
               background-color: #feb3bd;
+              &:hover,
+              &:focus {
+                background-color: #da8f99;
+                color: #fff;
+              }
             }
             .short-description {
               display: none;
@@ -655,14 +665,30 @@ a {
                 justify-content: center;
                 align-items: center;
                 margin-left: auto;
+                transition: all 0.7s;
                 &__burgers {
                   background-color: #f2b03d;
+                  &:hover,
+                  &:focus {
+                    background-color: #e19209;
+                    color: #fff;
+                  }
                 }
                 &__beverages {
                   background-color: #30d0cd;
+                  &:hover,
+                  &:focus {
+                    background-color: #02a7a4;
+                    color: #fff;
+                  }
                 }
                 &__pizza {
                   background-color: #feb3bd;
+                  &:hover,
+                  &:focus {
+                    background-color: #da8f99;
+                    color: #fff;
+                  }
                 }
               }
             }
