@@ -1,0 +1,326 @@
+@import 'libs/slider-card-product-redesign.scss';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  @media (min-width: 1024px) {
+    width: 1000px;
+    padding: 10px;
+  }
+  @media (min-width: 1280px) {
+    width: 1200px;
+    padding: 10px;
+  }
+  @media (min-width: 1350px) {
+    width: 1300px;
+    padding: 10px;
+  }
+}
+.section-card-product__new {
+  padding: 28px 0 10px;
+  .back {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--Color-black);
+    padding-left: 41px;
+    position: relative;
+    margin-bottom: 25px;
+    display: block;
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url(../img/arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50%;
+      width: 32px;
+      height: 20px;
+      left: 0;
+      top: 4px;
+    }
+  }
+  .slider-wrapper {
+    padding-bottom: 13px;
+    .slider-card__big {
+      margin-bottom: 15px;
+    }
+  }
+  .description {
+    padding: 20px 0;
+    &-name {
+      color: #000000;
+      font-family: 'Segoe UI';
+      font-size: 26px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    &-text {
+      color: #000000;
+      font-family: 'Segoe UI';
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 24px;
+      text-align: left;
+      padding-right: 30px;
+      margin-bottom: 13px;
+    }
+    .add-wrapper {
+      padding-bottom: 15px;
+      .add-title {
+        color: #808080;
+        font-family: 'Segoe UI';
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        margin: 0 0 15px 0;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          width: 67%;
+          height: 2px;
+          transform: translate(0%, -50%);
+          bottom: 38%;
+          right: 0%;
+          background-color: #cccccc;
+        }
+      }
+      .ingredients-list {
+        // display: flex;
+        // flex-wrap: wrap;
+        .ingredients-item {
+          display: flex;
+          align-items: center;
+          width: 50%;
+          position: relative;
+          padding-left: 23px;
+          margin-bottom: 34px;
+          &__title {
+            font-family: 'Segoe UI';
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            margin-left: 29px;
+            margin-right: 12px;
+          }
+          span.jcf-checkbox {
+            min-width: 26px;
+            height: 26px;
+            border: 2px solid #000000;
+            background-color: #ffffff;
+            display: inline-flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            // margin-right: 17px;
+            position: relative;
+            transition: all 0.5s;
+            &:hover {
+              border: 2px solid var(--Color-yellow);
+            }
+            &:active {
+              border: 2px solid #000000;
+            }
+            &.jcf-checked {
+              span {
+                width: 16px;
+                height: 16px;
+                background-color: #ffb100;
+                border-radius: 50%;
+              }
+            }
+          }
+          &__price {
+            color: #000000;
+            font-family: 'Segoe UI';
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-align: left;
+            margin: 0;
+          }
+        }
+      }
+      .total-wrapper {
+        margin-top: 9px;
+        width: 100%;
+        height: 46px;
+        border-radius: 10px;
+        background-color: #f8f1e6;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 9px 23px;
+        .total-title {
+          font-family: 'Segoe UI';
+          font-size: 18px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: left;
+          margin: 0 26px 0 0;
+        }
+        .total-count {
+          color: #f2b03d;
+          font-family: 'Segoe UI';
+          font-size: 24px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: left;
+          margin: 0;
+          .count {
+            font-size: 24px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .number-wrapper {
+      padding: 20px 0;
+      // display: flex;
+      width: 100%;
+      // align-items: center;
+      // justify-content: flex-end;
+      // padding: 30px 30px 5px;
+      .number {
+        justify-content: center;
+        margin-bottom: 36px;
+      }
+      .add-to-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #ffb100;
+        font-family: 'CartographSansCF-Regular';
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        transition: all 0.7s;
+        &:hover,
+        &:focus {
+          background-color: #e19209;
+        }
+      }
+    }
+  }
+}
+.section-recommend-to-order {
+  padding: 13px 0 40px;
+  .recommend-title {
+    border-bottom: 2px solid #000;
+    padding-bottom: 23px;
+    margin-bottom: 15px;
+    .title {
+      color: #000000;
+      font-family: 'Segoe UI';
+      font-size: 28px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+    }
+  }
+  .slider-wrapper {
+    padding: 20px 0;
+    .slider-recommend {
+      .slider-item {
+        max-width: 166px;
+        height: auto;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.55);
+        border-radius: 10px;
+        cursor: pointer;
+        // margin-right: 10px;
+        margin: 0 5px;
+        .item-img {
+          max-width: 166px;
+          height: auto;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+        .item-description {
+          padding: 23px 14px 12px;
+          text-align: center;
+          width: 100%;
+          &__title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 34px;
+            color: #000000;
+            font-family: 'Segoe UI';
+            font-size: 13px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            text-transform: uppercase;
+            width: fit-content;
+            margin: 0 auto 29px;
+          }
+          &__price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 138px;
+            height: 31px;
+            border-radius: 15px;
+            background-color: #30d0cd;
+            margin: 0 auto;
+            font-family: 'Segoe UI';
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            font-style: normal;
+            letter-spacing: normal;
+            .price {
+              font-family: 'Segoe UI';
+              font-size: 14px;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
