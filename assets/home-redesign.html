@@ -1,689 +1,827 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c" />
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
-    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png" />
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
     <!-- <link rel="stylesheet" href="../css/home.css" data-inprogress=""> -->
-    <link rel="stylesheet" href="css/home-redesign.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/home-redesign.min.css" data-inprogress="" />
+  </head>
 
-</head>
-
-<body class="body" id="body">
+  <body class="body" id="body">
     <div class="wrapper">
-        <!-- build:section layout.pop_up-->
+      <!-- build:section layout.pop_up-->
+      <!-- /build -->
+      <include src="assets/templates/pop-up.html"></include>
+      <main class="main">
+        <!-- build:section layout.header_reguest-->
         <!-- /build -->
-        <include src="assets/templates/pop-up.html"></include>
-        <main class="main">
+        <!-- <include src="assets/templates/header-reguest.html"></include> -->
 
-            <!-- build:section layout.header_reguest-->
-            <!-- /build -->
-            <!-- <include src="assets/templates/header-reguest.html"></include> -->
-
-            <div class="container">
-                <section class="section section-product  section-product__new" id='anchor'>
-                    <div class="title-wrapper">
-                        <h2 class="title title__burgers">Бургеры</h2>
-                    </div>
-                    <div class="product-list">
-                        <ul class="list">
-                            <li class="list-item list-item__burgers">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-1.jpg" alt="burger"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                    <div class="desription__title-wrapper  desription-title__turkey">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Чизбургер с котлетой из индейки</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__burgers"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__burgers"></span>
-                                        <button class="add-product add-product__burgers">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__burgers">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-2.jpg" alt="burger"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                    <div class="desription__title-wrapper desription-title__beef">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Чизбургер</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__burgers"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__burgers"></span>
-                                        <button class="add-product add-product__burgers">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__burgers"><span class="price-count__burgers">320</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__burgers">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-3.jpg" alt="burger"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                    <div class="desription__title-wrapper desription-title__beef">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Техасский бро</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__burgers"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__burgers"></span>
-                                        <button class="add-product add-product__burgers">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__burgers">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-4.jpg" alt="burger"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                    <div class="desription__title-wrapper  desription-title__turkey">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Дабл Блючиз</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__burgers"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__burgers"></span>
-                                        <button class="add-product add-product__burgers">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__burgers"><span class="price-count__burgers">320</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__burgers">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-13.jpg" alt="burger"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                    <div class="desription__title-wrapper  desription-title__turkey">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Американ Дрим</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__burgers"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__burgers"></span>
-                                        <button class="add-product add-product__burgers">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__burgers">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-14.jpg" alt="burger"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                    <div class="desription__title-wrapper  desription-title__turkey">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Джеквуд</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p></div>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__burgers"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__burgers"></span>
-                                        <button class="add-product add-product__burgers">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="load-more load-more__burgers">Показать еще</button>
-                    </div>
-                </section>
-                <section class="section section-product section-product__new" id='anchor3'>
-                    <div class="title-wrapper">
-                        <h2 class="title title__beverages">Напитки</h2>
-                    </div>
-                    <div class="product-list">
-                        <ul class="list">
-                            <li class="list-item list-item__beverages">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__1.jpg" alt="beverages"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Лимон - мята</p></a>
-                                    </div>
-                                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__beverages"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__beverages"></span>
-                                        <button class="add-product add-product__beverages">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__beverages"><span class="price-count price-count__beverages">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__beverages">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__7.png" alt="beverages"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                     <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Тархун - руккола</p></a>
-                                    </div>
-                                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__beverages"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__beverages"></span>
-                                        <button class="add-product add-product__beverages">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__beverages"><span class="price-count price-count__beverages">320</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__beverages">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__4.jpg" alt="beverages"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                     <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Манго - Маракуйя</p></a>
-                                    </div>
-                                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__beverages"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__beverages"></span>
-                                        <button class="add-product add-product__beverages">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__beverages"><span class="price-count price-count__beverages">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__beverages">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__3.jpg" alt="beverages"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                     <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Лимон - Малина</p></a>
-                                    </div>
-                                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__beverages"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__beverages"></span>
-                                        <button class="add-product add-product__beverages">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__beverages"><span class="price-count price-count__beverages">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__beverages">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__6.png" alt="beverages"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                     <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Лимон - мята</p></a>
-                                    </div>
-                                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__beverages"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__beverages"></span>
-                                        <button class="add-product add-product__beverages">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__beverages"><span class="price-count price-count__beverages">370</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__beverages">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__5.jpg" alt="beverages"></a>
-                                </div>
-                                <div class="list-item__desription">
-                                     <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Морс - Клюква</p></a>
-                                    </div>
-                                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
-                                    <div class="number">
-                                        <span class="minus minus__beverages"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__beverages"></span>
-                                        <button class="add-product add-product__beverages">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__beverages"><span class="price-count price-count__beverages">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="load-more load-more__beverages">Показать еще</button>
-                    </div>
-                </section>
-                <section class="section section-product section-product__new" id='anchor2'>
-                    <div class="title-wrapper">
-                        <h2 class="title title__pizza">Пицца</h2>
-                    </div>
-                    <div class="product-list">
-                        <ul class="list">
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__5.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Папперони</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__4.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">с грушей и горгонзолой</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__8.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Маргарита</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__1.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Мортаделла и страчателла</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">470</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__4.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">с ростбифом</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__2.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">с море продуктами</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__7.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Мясная</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="list-item list-item__pizza">
-                                <div class="list-item__img" >
-                                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__6.jpg" alt="pizza"></a>
-                                </div>
-                                <div class="list-item__desription list-item__desription-pizza">
-                                    <div class="desription__title-wrapper">
-                                        <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">панчетта</p></a>
-                                    </div>
-                                    <div class="add-ingrediets__wrapper"><button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button></div>
-                                    <div class="short-description"><p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p></div>
-                                    <form class="pizza-size">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см </label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см </label>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="full-description"><p class="full-description__text">Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный соус, луковый мармелад, халапеньо</p>
-                                    <form class="pizza-size pizza-size__description">
-                                        <div class="form-group">
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" checked id="radio-3">
-                                                <label for="radio-3">33 см</label>
-                                            </div>
-                                            <div class="form-column ">
-                                                <input type="radio" name="radio" id="radio-1">
-                                                <label for="radio-1">39 см</label>
-                                            </div>
-                                        </div>
-                                    </form></div>
-                                    <div class="number">
-                                        <span class="minus minus__pizza"></span>
-                                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
-                                        <span class="plus plus__pizza"></span>
-                                        <button class="add-product add-product__pizza">Добавить</button>
-                                    </div>
-                                    <div class="desription-button__wrapper">
-                                        <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="load-more load-more__pizza">Показать еще</button>
-                    </div>
-                </section>
-               
-                <!-- build:section layout.footer-->
-                <!-- /build -->
-
+        <div class="container">
+          <section class="section section-product section-product__new" id="anchor">
+            <div class="title-wrapper">
+              <h2 class="title title__burgers">Бургеры</h2>
             </div>
-        </main>
+            <div class="product-list">
+              <ul class="list">
+                <li class="list-item list-item__burgers">
+                  <div class="list-item__img">
+                    <a href="card-product-redesign.html" class="desription-img__link"><img src="img/img-1.jpg" alt="burger" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper desription-title__turkey">
+                      <a href="card-product-redesign.html" class="desription-title__link"
+                        ><p class="desription-title">Чизбургер с котлетой из индейки</p></a
+                      >
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p>
+                    </div>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__burgers"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__burgers"></span>
+                      <button class="add-product add-product__burgers">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__burgers">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-2.jpg" alt="burger" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper desription-title__beef">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Чизбургер</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p>
+                    </div>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__burgers"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__burgers"></span>
+                      <button class="add-product add-product__burgers">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__burgers"><span class="price-count__burgers">320</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__burgers">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-3.jpg" alt="burger" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper desription-title__beef">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Техасский бро</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p>
+                    </div>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__burgers"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__burgers"></span>
+                      <button class="add-product add-product__burgers">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__burgers">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-4.jpg" alt="burger" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper desription-title__turkey">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Дабл Блючиз</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p>
+                    </div>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__burgers"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__burgers"></span>
+                      <button class="add-product add-product__burgers">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__burgers"><span class="price-count__burgers">320</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__burgers">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-13.jpg" alt="burger" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper desription-title__turkey">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Американ Дрим</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p>
+                    </div>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__burgers"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__burgers"></span>
+                      <button class="add-product add-product__burgers">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__burgers">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/img-14.jpg" alt="burger" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper desription-title__turkey">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Джеквуд</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__burgers add-ingredients-product">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Белая булка, маринованы огурцы, сыр чеддер, котлета из ...</p>
+                    </div>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__burgers"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__burgers"></span>
+                      <button class="add-product add-product__burgers">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="load-more load-more__burgers">Показать еще</button>
+            </div>
+          </section>
+          <section class="section section-product section-product__new" id="anchor3">
+            <div class="title-wrapper">
+              <h2 class="title title__beverages">Напитки</h2>
+            </div>
+            <div class="product-list">
+              <ul class="list">
+                <li class="list-item list-item__beverages">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__1.jpg" alt="beverages" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Лимон - мята</p></a>
+                    </div>
+                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
+                    <div class="number">
+                      <span class="minus minus__beverages"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__beverages"></span>
+                      <button class="add-product add-product__beverages">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__beverages">
+                        <span class="price-count price-count__beverages">350</span>руб.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__beverages">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__7.png" alt="beverages" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Тархун - руккола</p></a>
+                    </div>
+                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
+                    <div class="number">
+                      <span class="minus minus__beverages"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__beverages"></span>
+                      <button class="add-product add-product__beverages">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__beverages">
+                        <span class="price-count price-count__beverages">320</span>руб.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__beverages">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__4.jpg" alt="beverages" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Манго - Маракуйя</p></a>
+                    </div>
+                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
+                    <div class="number">
+                      <span class="minus minus__beverages"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__beverages"></span>
+                      <button class="add-product add-product__beverages">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__beverages">
+                        <span class="price-count price-count__beverages">350</span>руб.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__beverages">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__3.jpg" alt="beverages" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Лимон - Малина</p></a>
+                    </div>
+                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
+                    <div class="number">
+                      <span class="minus minus__beverages"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__beverages"></span>
+                      <button class="add-product add-product__beverages">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__beverages">
+                        <span class="price-count price-count__beverages">350</span>руб.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__beverages">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__6.png" alt="beverages" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Лимон - мята</p></a>
+                    </div>
+                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
+                    <div class="number">
+                      <span class="minus minus__beverages"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__beverages"></span>
+                      <button class="add-product add-product__beverages">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__beverages">
+                        <span class="price-count price-count__beverages">370</span>руб.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__beverages">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__5.jpg" alt="beverages" /></a>
+                  </div>
+                  <div class="list-item__desription">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Морс - Клюква</p></a>
+                    </div>
+                    <div class="short-description"><p class="short-description__text">Лимонад</p></div>
+                    <div class="number">
+                      <span class="minus minus__beverages"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__beverages"></span>
+                      <button class="add-product add-product__beverages">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__beverages">
+                        <span class="price-count price-count__beverages">350</span>руб.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="load-more load-more__beverages">Показать еще</button>
+            </div>
+          </section>
+          <section class="section section-product section-product__new" id="anchor2">
+            <div class="title-wrapper">
+              <h2 class="title title__pizza">Пицца</h2>
+            </div>
+            <div class="product-list">
+              <ul class="list">
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__5.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Папперони</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__4.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"
+                        ><p class="desription-title">с грушей и горгонзолой</p></a
+                      >
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__8.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Маргарита</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__1.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"
+                        ><p class="desription-title">Мортаделла и страчателла</p></a
+                      >
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">470</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__4.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">с ростбифом</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__2.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">с море продуктами</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__7.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">Мясная</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item list-item__pizza">
+                  <div class="list-item__img">
+                    <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__6.jpg" alt="pizza" /></a>
+                  </div>
+                  <div class="list-item__desription list-item__desription-pizza">
+                    <div class="desription__title-wrapper">
+                      <a href="card-product-new.html" class="desription-title__link"><p class="desription-title">панчетта</p></a>
+                    </div>
+                    <div class="add-ingrediets__wrapper">
+                      <button class="add-ingrediets add-ingrediets__pizza">Добавить ингридиенты</button>
+                    </div>
+                    <div class="short-description">
+                      <p class="short-description__text">Сливочно-цитрусовый соу, соус «маракуйя», моцарелла, ...</p>
+                    </div>
+                    <form class="pizza-size">
+                      <div class="form-group">
+                        <div class="form-column">
+                          <input type="radio" name="radio" checked id="radio-3" />
+                          <label for="radio-3">33 см </label>
+                        </div>
+                        <div class="form-column">
+                          <input type="radio" name="radio" id="radio-1" />
+                          <label for="radio-1">39 см </label>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="full-description">
+                      <p class="full-description__text">
+                        Черная булка, жареный бекон, руккола, печеный помидор, сыр чеддер, котлета из говядины dry age, соус BBQ, горчичный
+                        соус, луковый мармелад, халапеньо
+                      </p>
+                      <form class="pizza-size pizza-size__description">
+                        <div class="form-group">
+                          <div class="form-column">
+                            <input type="radio" name="radio" checked id="radio-3" />
+                            <label for="radio-3">33 см</label>
+                          </div>
+                          <div class="form-column">
+                            <input type="radio" name="radio" id="radio-1" />
+                            <label for="radio-1">39 см</label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="number">
+                      <span class="minus minus__pizza"></span>
+                      <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0" />
+                      <span class="plus plus__pizza"></span>
+                      <button class="add-product add-product__pizza">Добавить</button>
+                    </div>
+                    <div class="desription-button__wrapper">
+                      <p class="desription-price desription-price__pizza"><span class="price-count price-count__pizza">350</span>руб.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="load-more load-more__pizza">Показать еще</button>
+            </div>
+          </section>
+
+          <!-- build:section layout.footer-->
+          <!-- /build -->
+        </div>
+      </main>
     </div>
-
-
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.min.js"></script>
@@ -696,6 +834,5 @@
     <script src="js/main.min.js"></script>
     <script src="js/home-redesign.min.js"></script>
     <script src="js/home.min.js"></script>
-
-
+  </body>
 </html>
