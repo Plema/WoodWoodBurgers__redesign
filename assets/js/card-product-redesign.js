@@ -46,5 +46,20 @@ $(document).ready(function () {
     autoplaySpeed: 5000,
     waitForAnimate: true,
     initialSlide: 1,
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+    ],
   });
 });
