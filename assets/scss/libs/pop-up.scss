@@ -457,7 +457,6 @@
       margin-bottom: 35px;
       overflow-y: scroll;
       height: 472px;
-
       &::-webkit-scrollbar {
         width: 3px;
         height: 80px;
@@ -588,7 +587,352 @@
     }
   }
 }
+.modall-current-order {
+  .modall-body {
+    align-items: flex-start;
+    height: 90%;
+    padding: 20px 15px;
+    .modall-title {
+      color: #000000;
+      font-family: 'Segoe UI';
+      font-size: 18px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      margin: 25px 0 15px;
+    }
+    .current-order__inner {
+      margin-bottom: 35px;
+      overflow-y: scroll;
+      height: 592px;
+      &::-webkit-scrollbar {
+        width: 3px;
+        height: 80px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #2399b8;
+        height: 80px;
+      }
+      &::-webkit-scrollbar-track {
+        background-color: #e9e5e5;
+      }
+      .current-list {
+        padding: 0 12px 20px 0;
+        .list-item {
+          border-radius: 10px;
+          background-color: #fff8f9;
+          padding: 13px;
+          min-width: 200px;
+          position: relative;
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+          .delete-item {
+            top: 13px;
+            right: 13px;
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+            position: absolute;
+            z-index: 5;
 
+            &::before,
+            &::after {
+              content: '';
+              top: 6px;
+              left: 0;
+              width: 15px;
+              height: 2px;
+              position: absolute;
+              background: #000;
+            }
+
+            &::before {
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+            }
+
+            &::after {
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+          &__wrapper {
+            display: flex;
+            padding: 11px 0px 11px 7px;
+          }
+          &__img {
+            margin-right: 22px;
+            width: 100px;
+            height: 100px;
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          &__description {
+            .description-title {
+              color: #000000;
+              font-family: 'Segoe UI';
+              font-size: 20px;
+              font-weight: 700;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: left;
+              margin: 0;
+              min-height: 54px;
+              display: flex;
+              align-items: center;
+              margin-bottom: 19px;
+            }
+            .number {
+              // display: flex;
+              align-items: center;
+              margin: 0;
+              min-width: 20%;
+              margin: 0;
+              span.minus {
+                background-color: #fff;
+                display: inline-flex;
+                cursor: pointer;
+                justify-content: center;
+                width: 22px;
+                height: 22px;
+                border-radius: 20px;
+                position: relative;
+                border: 2px solid var(--Color-black);
+                -webkit-transition: all 0.6s;
+                -moz-transition: all 0.6s;
+                -ms-transition: all 0.6s;
+                -o-transition: all 0.6s;
+                transition: all 0.6s;
+                opacity: 1;
+                &.opacity {
+                  opacity: 1;
+                }
+                &__burgers {
+                  &:hover {
+                    border: 2px solid var(--Color-yellow);
+                    &::before {
+                      background-color: var(--Color-yellow);
+                    }
+                  }
+                }
+                &__beverages {
+                  &:hover {
+                    border: 2px solid #30d0cd;
+                    &::before {
+                      background-color: #30d0cd;
+                    }
+                  }
+                }
+                &__pizza {
+                  &:hover {
+                    border: 2px solid #feb3bd;
+                    &::before {
+                      background-color: #feb3bd;
+                    }
+                  }
+                }
+                &::before {
+                  position: absolute;
+                  content: '';
+                  width: 10px;
+                  height: 2px;
+                  background-color: var(--Color-black);
+                  transform: translate(-50%, -50%);
+                  top: 50%;
+                  left: 50%;
+                }
+              }
+              input {
+                width: 40px;
+                height: 20px;
+                border-radius: 3px;
+                background-color: transparent;
+                text-align: center;
+                margin: 0;
+                font-family: 'Segoe UI';
+                font-size: 24px;
+                font-weight: 700;
+                border: none;
+                opacity: 1;
+                &.opacity {
+                  opacity: 1;
+                }
+              }
+              span.plus {
+                background-color: #fff;
+                display: inline-flex;
+                cursor: pointer;
+                justify-content: center;
+                width: 22px;
+                height: 22px;
+                border-radius: 20px;
+                position: relative;
+                border: 2px solid var(--Color-black);
+                cursor: pointer;
+                -webkit-transition: all 0.6s;
+                -moz-transition: all 0.6s;
+                -ms-transition: all 0.6s;
+                -o-transition: all 0.6s;
+                transition: all 0.6s;
+                opacity: 1;
+                &.opacity {
+                  opacity: 1;
+                }
+                &__burgers {
+                  &:hover {
+                    border: 2px solid var(--Color-yellow);
+                    &::before,
+                    &::after {
+                      background: var(--Color-yellow);
+                    }
+                  }
+                }
+                &__beverages {
+                  &:hover {
+                    border: 2px solid #30d0cd;
+                    &::before,
+                    &::after {
+                      background-color: #30d0cd;
+                    }
+                  }
+                }
+                &__pizza {
+                  &:hover {
+                    border: 2px solid #feb3bd;
+                    &::before,
+                    &::after {
+                      background-color: #feb3bd;
+                    }
+                  }
+                }
+                &::before,
+                &::after {
+                  content: '';
+                  top: 50%;
+                  left: 50%;
+                  width: 10px;
+                  height: 2px;
+                  position: absolute;
+                  background: var(--Color-black);
+                  transform: translate(-50%, -50%);
+                }
+                &::before {
+                  -webkit-transform: rotate(-90deg) translate(1px, -6px);
+                  -moz-transform: rotate(-90deg) translate(1px, -6px);
+                  -ms-transform: rotate(-90deg) translate(1px, -6px);
+                  -o-transform: rotate(-90deg) translate(1px, -6px);
+                  transform: rotate(-90deg) translate(1px, -6px);
+                }
+                &::after {
+                  -webkit-transform: rotate(0deg) translate(-50%, -50%);
+                  -moz-transform: rotate(0deg) translate(-50%, -50%);
+                  -ms-transform: rotate(0deg) translate(-50%, -50%);
+                  -o-transform: rotate(0deg) translate(-50%, -50%);
+                  transform: rotate(0deg) translate(-50%, -50%);
+                }
+              }
+            }
+          }
+          .price-product {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 9px;
+            .total-count {
+              padding: 0;
+              margin: 0;
+              color: #000000;
+              font-size: 24px;
+              font-family: 'Segoe UI';
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              .count {
+                font-size: 24px;
+                font-family: 'Segoe UI';
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+    .order-amount {
+      border-top: 2px solid #000000;
+      width: 100%;
+      padding: 35px 0 30px;
+      .total-wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+        .total-title {
+          color: #000000;
+          font-family: 'Segoe UI';
+          font-size: 20px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+        }
+        .total-count {
+          display: block;
+          color: #000000;
+          font-family: 'Segoe UI';
+          font-size: 20px;
+          font-weight: 700;
+          .count {
+            font-family: 'Segoe UI';
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+      .add-to-cart {
+        margin-top: 35px;
+        width: 262px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #ffb100;
+        color: #ffffff;
+        font-family: 'Segoe UI';
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        transition: all 0.7s;
+        &:hover,
+        &:focus {
+          background-color: #e19209;
+        }
+      }
+    }
+  }
+}
 .modall.active-modall {
   display: block;
 }
@@ -740,6 +1084,21 @@
                 margin-bottom: 61px;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  .modall-current-order {
+    .modall-body {
+      max-height: 80%;
+      .current-order__inner {
+        .current-list {
+          .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 475px;
           }
         }
       }
@@ -1084,6 +1443,70 @@
           &:focus {
             background-color: #e19209;
           }
+        }
+      }
+    }
+  }
+  .modall-current-order {
+    .modall-body {
+      max-height: 90%;
+      width: 453px;
+      transform: translate(0%, -50%);
+      left: 60%;
+      top: 53%;
+      .modall-title {
+        font-size: 24px;
+        font-family: 'CartographSansCF-Regular';
+      }
+      .current-order__inner {
+        height: 592px;
+        .current-list {
+          .list-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 392px;
+            &__description {
+              .description-title {
+                font-family: 'CartographSansCF-Regular';
+              }
+            }
+            .price-product {
+              .total-count {
+                font-family: 'CartographSansCF-Regular';
+                font-size: 24px;
+                font-weight: 800;
+                .count {
+                  font-family: 'CartographSansCF-Regular';
+                  font-size: 24px;
+                  font-weight: 800;
+                }
+              }
+            }
+          }
+        }
+      }
+      .order-amount {
+        padding: 30px 0;
+        .total-wrapper {
+          .total-title {
+            font-family: 'CartographSansCF-Regular';
+            font-size: 24px;
+            font-weight: 700;
+          }
+          .total-count {
+            font-family: 'CartographSansCF-Regular';
+            font-size: 28px;
+            font-weight: 700;
+            .count {
+              font-family: 'CartographSansCF-Regular';
+              font-size: 28px;
+              font-weight: 700;
+            }
+          }
+        }
+        .add-to-cart {
+          margin-top: 30px;
         }
       }
     }
