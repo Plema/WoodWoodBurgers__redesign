@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="cmsmagazine" content="5a7189a28fb3dc68238dbdb44c9ea99c">
+    <title>Корзина оформление заказа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css" data-inprogress="">
+    <link rel="stylesheet" href="css/basket.min.css" data-inprogress="">
+  </head>
+  <body class="body" id="body">
+    <div class="modall modall-address">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Добавить адрес доставки</h4>
+    <form class="form">
+      <div class="form-content">
+        <div class="form-column">
+          <input type="text" placeholder="Город">
+        </div>
+        <div class="form-column">
+          <input type="text" placeholder="Улица">
+        </div>
+        <div class="form-group">
+          <div class="form-column">
+            <input type="text" placeholder="Дом">
+          </div>
+          <div class="form-column">
+            <input type="text" placeholder="Строение / корпус">
+          </div>
+          <div class="form-column">
+            <input type="text" placeholder="Этаж">
+          </div>
+          <div class="form-column">
+            <input type="text" placeholder="Домофон">
+          </div>
+        </div>
+        <div class="form-column">
+          <input type="text" placeholder="Квартира / офис">
+        </div>
+      </div>
+      <div class="action">
+        <button class="btn">Добавить</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modall modall-review">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Оставить отзыв</h4>
+    <form class="form">
+      <div class="form-content">
+        <div class="form-column">
+          <input type="text" placeholder="E-mail">
+        </div>
+        <div class="form-column">
+          <input type="text" placeholder="Телефон" class="telephone">
+        </div>
+        <div class="form-column">
+          <textarea placeholder="Отзыв о заказе"></textarea>
+        </div>
+        <div class="action">
+          <button class="btn">Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modall modall-code">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Введите код из e-mail сообщения</h4>
+    <form class="form">
+      <div class="form-content">
+        <div class="form-column">
+          <input type="text" placeholder="Код">
+        </div>
+        <div class="action">
+          <button class="btn">Подтвердить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modall modall-code-sms">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Введите код из СМС</h4>
+    <form class="form">
+      <div class="form-content">
+        <div class="form-column">
+          <input type="text" placeholder="Код">
+        </div>
+        <div class="action">
+          <button class="btn">Подтвердить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modall modall-promo">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Промо-код</h4>
+    <form class="form">
+      <div class="form-content">
+        <div class="form-column">
+          <!-- за включение текста ошибки отвечает класс .active -->
+          <span class="eror">Не верный промо-код =(</span>
+          <input type="text" placeholder="Введите Ваш промо-код">
+        </div>
+        <div class="action">
+          <button class="btn">Применить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modall modall-accepted">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Ваш заказ <span>№ 456</span> принят. Приятного аппетита!</h4>
+    <div class="action">
+      <button class="btn">На главную</button>
+    </div>
+  </div>
+</div>
+
+<div class="modall modall-over">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Блюдо закончилось =(</h4>
+    <span class="description">Попробуйте выбрать что то другое</span>
+    <ul>
+      <li>Маргарита</li>
+      <li>Дабл блючиз</li>
+    </ul>
+    <div class="action">
+      <button class="btn">В меню</button>
+    </div>
+  </div>
+</div>
+
+<div class="modall modall-options">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Выберите опции</h4>
+    <form class="form customScrollVertical">
+      <span class="title">Убрать</span>
+      <div class="form-group">
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-1">
+          <label for="checkbox-1">Лук</label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-2">
+          <label for="checkbox-2">Булочку</label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-3">
+          <label for="checkbox-3">Сыр</label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-4">
+          <label for="checkbox-4">Чеснок</label>
+        </div>
+      </div>
+      <span class="title">Добавить</span>
+      <div class="form-group">
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-6">
+          <label for="checkbox-6">Сыр<span>30р.</span></label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-7">
+          <label for="checkbox-7">Котлета<span>75р.</span></label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-8">
+          <label for="checkbox-8">Лук<span>25р.</span></label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-9">
+          <label for="checkbox-9">Соус<span>10р.</span></label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-10">
+          <label for="checkbox-10">Булочку<span>15р.</span></label>
+        </div>
+        <div class="form-column">
+          <input type="checkbox" name="checkbox-11">
+          <label for="checkbox-11">Омлет<span>40р.</span></label>
+        </div>
+      </div>
+      <div class="action">
+        <div class="total">
+          <span>Итого:</span>
+          <span>455р.</span>
+        </div>
+        <button class="btn">Добавить без опций</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modall modall-basket">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h4>Добавим в заказ?</h4>
+    <ul class="customScrollVertical">
+      <li>
+        <img src="../img/img-5.jpg" alt="">
+        <div class="title">
+          <a href="card-product.html">Лимон-мята</a>
+          <span>320р.</span>
+          <button type="button" class="btn">Добавить в заказ</button>
+        </div>
+      </li>
+      <li>
+        <img src="../img/img-6.jpg" alt="">
+        <div class="title">
+          <a href="card-product.html">Лимон-манго</a>
+          <span>320р.</span>
+          <button type="button" class="btn">Добавить в заказ</button>
+        </div>
+      </li>
+      <li>
+        <img src="../img/img-7.jpg" alt="">
+        <div class="title">
+          <a href="card-product.html">Лимон-киви</a>
+          <span>320р.</span>
+          <button type="button" class="btn">Добавить в заказ</button>
+        </div>
+      </li>
+      <li>
+        <img src="../img/img-10.jpg" alt="">
+        <div class="title">
+          <a href="card-product.html">Фокачча</a>
+          <span>480р.</span>
+          <button type="button" class="btn">Добавить в заказ</button>
+        </div>
+      </li>
+      <li>
+        <img src="../img/img-12.jpg" alt="">
+        <div class="title">
+          <a href="card-product.html">Папперони</a>
+          <span>470р.</span>
+          <button type="button" class="btn">Добавить в заказ</button>
+        </div>
+      </li>
+      <li>
+        <img src="../img/img-11.jpg" alt="">
+        <div class="title">
+          <a href="card-product.html">Пицца с море продуктами</a>
+          <span>450р.</span>
+          <button type="button" class="btn">Добавить в заказ</button>
+        </div>
+      </li>
+    </ul>
+    <div class="action">
+      <button class="btn">Продолжить</button>
+    </div>
+  </div>
+</div>
+
+<div class="modall modall-recommend-to-order">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h2 class="modall-title">Рекомендуем к заказу</h2>
+    <div class="recommend-inner">
+      <ul class="recommend-list">
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__1.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__2.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/pizza__4.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__1.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__1.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__5.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__2.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__1.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__3.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="list-item__img">
+            <a href="card-product-new.html" class="desription-img__link"><img src="img/beverages__4.jpg" alt="beverages"></a>
+          </div>
+          <div class="list-item__description">
+            <div class="decvription-text">
+              <h4 class="description__name">Лимон-мятап</h4>
+              <p class="description__price"><span class="price-count price-count__burgers">320</span>р.</p>
+            </div>
+            <button type="button" class="description__button">Добавить в заказ</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="recommend-button__wrapper">
+      <button class="skip-button">Пропустить</button>
+    </div>
+  </div>
+</div>
+
+<div class="modall modall-add-ingredients-product">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h2 class="product-name">Техасский бро</h2>
+    <div class="content-wrapper">
+      <div class="slider-wrapper">
+        <div class="slider-big">
+          <div class="slider-big__item">
+            <img src="img/cart-slide__1.png" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-1.jpg" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-2.jpg" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-3.jpg" alt="">
+          </div>
+          <div class="slider-big__item">
+            <img src="img/img-4.jpg" alt="">
+          </div>
+        </div>
+        <div class="slider-min">
+          <div class="slider-min__item">
+            <img src="img/cart-slide__1.png" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-1.jpg" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-2.jpg" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-3.jpg" alt="">
+          </div>
+          <div class="slider-min__item">
+            <img src="img/img-4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="description-product">
+        <div class="composition-wrapper">
+          <h3 class="composition-title">Состав</h3>
+          <p class="composition-text">
+            Черная булка, жареный бекон, руккола, печеный помидор, сырчеддер, котлета из говядины dry age, соус BBQ, горчичныйсоус, луковый
+            мармелад, халапеньо.
+          </p>
+        </div>
+        <div class="add-wrapper">
+          <h3 class="add-title">Добавить</h3>
+          <div class="ingredients-list">
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="cheese" name="cheese">
+              <label class="ingredients-item__title" for="cheese">Сыр</label>
+              <p class="ingredients-item__price"><span class="price">30</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="сutlet" name="cheese">
+              <label class="ingredients-item__title" for="сutlet">Котлета</label>
+              <p class="ingredients-item__price"><span class="price">75</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="onion" name="onion">
+              <label class="ingredients-item__title" for="onion">Лук</label>
+              <p class="ingredients-item__price"><span class="price">25</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="sauce" name="sauce">
+              <label class="ingredients-item__title" for="sauce">Соус</label>
+              <p class="ingredients-item__price"><span class="price">10</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input class="ingredients-item__checkbox" href="javascript:void(0)" type="checkbox" id="bun" name="bun">
+              <label class="ingredients-item__title" for="bun">Булочку</label>
+              <p class="ingredients-item__price"><span class="price">15</span>р.</p>
+            </div>
+            <div class="ingredients-item">
+              <input href="javascript:void(0)" type="checkbox" id="omelette" name="omelette">
+              <label class="ingredients-item__title" for="omelette">Омлет</label>
+              <p class="ingredients-item__price"><span class="price">40</span>р.</p>
+            </div>
+          </div>
+          <div class="total-wrapper">
+            <p class="total-title">Итого:</p>
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="number-wrapper">
+      <div class="number">
+        <span class="minus"></span>
+        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+        <span class="plus"></span>
+        <button class="add-to-cart">В корзину</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modall modall-current-order">
+  <div class="modall-body">
+    <span class="close"></span>
+    <h2 class="modall-title">Текущий заказ</h2>
+    <div class="current-order__inner">
+      <ul class="current-list">
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__1.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Фокачча</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__2.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Пицца с море продуктами</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">450</span>р.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__1.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Фокачча</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__2.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Пицца с море продуктами</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__1.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Фокачча</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__2.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Пицца с море продуктами</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__1.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Фокачча</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </li>
+        <li class="list-item">
+          <span class="delete-item"></span>
+          <div class="list-item__wrapper">
+            <div class="list-item__img">
+              <a href="card-product-redesign.html" class="current-order__link"><img src="img/current-order__2.png" alt="current-order"></a>
+            </div>
+            <div class="list-item__description">
+              <a href="card-product-redesign.html" class="current-order__link"><h3 class="description-title">Пицца с море продуктами</h3></a>
+              <div class="number">
+                <span class="minus minus__burgers"></span>
+                <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                <span class="plus plus__burgers"></span>
+              </div>
+            </div>
+          </div>
+          <div class="price-product">
+            <p class="total-count"><span class="count">455</span>р.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="order-amount">
+      <div class="total-wrapper">
+        <p class="total-title">Сумма заказа:</p>
+        <p class="total-count"><span class="count">6250</span>р.</p>
+      </div>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+  </div>
+</div>
+
+    <div class="wrapper">
+      <main class="main"></main>
+    </div>
+
+    <!-- scripr -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="../js/inputmask.js"></script>
+    <script src="../js/jcf.min.js"></script>
+    <script src="../js/jcf.select.min.js"></script>
+    <script src="../js/jcf.checkbox.min.js"></script>
+    <script src="../js/jcf.radio.min.js"></script>
+    <script src="../js/main.min.js"></script>
+    <script src="../js/basket.min.js"></script>
+  </body>
+</html>
