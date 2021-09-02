@@ -158,6 +158,14 @@ $(document).ready(function () {
   $('.add-to-cart').on('click', function () {
     $('.modall-add-ingredients-product').removeClass('active-modall');
   });
+  $('.current-order').on('click', function () {
+    $('.modall').removeClass('active-modall');
+    $('.modall-current-order').addClass('active-modall');
+    $('.body').addClass('showing-modal');
+  });
+  $('.add-to-cart').on('click', function () {
+    $('.modall-current-order').removeClass('active-modall');
+  });
 
   jQuery('.only_number').keypress(function (e) {
     if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57)) {
