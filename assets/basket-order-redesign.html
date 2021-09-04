@@ -8,22 +8,111 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png" />
     <link rel="stylesheet" href="css/style.min.css" data-inprogress="" />
     <link rel="stylesheet" href="css/basket.min.css" data-inprogress="" />
+    <link rel="stylesheet" href="css/basket-order-redesign.min.css" data-inprogress="" />
   </head>
   <body class="body" id="body">
     <include src="assets/templates/pop-up.html"></include>
     <div class="wrapper">
-      <main class="main"></main>
+      <main class="main">
+        <section class="section section-order-redesign">
+          <div class="container">
+            <h1 class="order-title">Оформление заказа</h1>
+            <div class="contact-details">
+              <h2 class="contact-details__title">Контактные данные</h2>
+              <form action="javascript:void(0);" class="contact-details__form">
+                <input class="name-input" type="text" placeholder="ФИО" />
+                <div class="phone-wrapper">
+                  <input class="phone-input" type="text" placeholder="Телефон" />
+                  <button class="send-button" type="submit">Отправить код</button>
+                </div>
+                <div class="code-wrapper">
+                  <input class="code-input" type="number" placeholder="Код из СМС" />
+                  <button class="confirm-button" type="submit">Подтвердить</button>
+                </div>
+              </form>
+            </div>
+            <div class="delivery-method">
+              <h2 class="delivery-method__title">Способ доставки</h2>
+              <div class="form">
+                <div class="form-group group-radio">
+                  <div class="form-column">
+                    <input type="radio" name="radio-1" />
+                    <label>Курьер</label>
+                  </div>
+                  <div class="form-column pickup">
+                    <input type="radio" name="radio-1" />
+                    <label>Самовывоз</label>
+                  </div>
+                </div>
+                <div class="address">
+                  <div class="address-wrapper">
+                    <input class="address__input address__input-decktop" type="text" placeholder="Адрес" />
+                    <button class="address__button" type="button">Найти</button>
+                  </div>
+                  <div class="address-wrapper address-wrapper__inner">
+                    <input class="address__input address__input-details" type="text" placeholder="Этаж" />
+                    <input class="address__input address__input-details" type="text" placeholder="Домофон" />
+                  </div>
+                  <input class="address__input address__input-details" type="text" placeholder="Квартира / офис" />
+                </div>
+              </div>
+              <div class="map">
+                <h6 class="map-title">Введите адрес или выберите на карте.</h6>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A46cbec55da49d7757cb47f83993b18ae86da8be6cae2708ec5176d1e1fcead2d&amp;source=constructor"
+                  width="100%"
+                  height="320"
+                  frameborder="0"
+                ></iframe>
+              </div>
+            </div>
+            <div class="notification">
+              <p class="notification__text">Упс! Ваш адрес не входит в зону доставки =(</p>
+            </div>
+            <div class="comment-order">
+              <textarea class="comment-order__textarea" name="" id="" minlength="15" placeholder="Комментарий к заказу"></textarea>
+            </div>
+            <div class="payment-method">
+              <h2 class="payment-method__title">Выберите способ оплаты</h2>
+              <div class="form">
+                <div class="form-group group-radio">
+                  <div class="form-column">
+                    <input type="radio" name="radio-2" />
+                    <label>Картой на сайте</label>
+                  </div>
+                  <div class="form-column">
+                    <input type="radio" name="radio-2" />
+                    <label>Наличными курьеру</label>
+                  </div>
+                  <div class="form-column">
+                    <input type="radio" name="radio-2" />
+                    <label>Картой курьеру</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="option-wrapper">
+              <a href="javascript:void(0);" class="option-wrapper__link-menu">Вернутся назад</a>
+              <a href="javascript:void(0);" class="option-wrapper__link-payment">Заказать</a>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <!-- <include src="assets/templates/footer.html"></include> -->
+        </div>
+      </main>
     </div>
 
     <!-- scripr -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery.mCustomScrollbar.min.js"></script>
-    <script src="../js/inputmask.js"></script>
-    <script src="../js/jcf.min.js"></script>
-    <script src="../js/jcf.select.min.js"></script>
-    <script src="../js/jcf.checkbox.min.js"></script>
-    <script src="../js/jcf.radio.min.js"></script>
-    <script src="../js/main.min.js"></script>
-    <script src="../js/basket.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jcf.min.js"></script>
+    <script src="js/jcf.select.min.js"></script>
+    <script src="js/jcf.checkbox.min.js"></script>
+    <script src="js/jcf.radio.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/basket.min.js"></script>
   </body>
 </html>
