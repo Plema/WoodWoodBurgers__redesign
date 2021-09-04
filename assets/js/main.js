@@ -199,7 +199,9 @@ $(document).ready(function () {
   $('.telephone').mask('+7 (000) 000 00 00', {
     placeholder: 'Телефон',
   });
-
+  $(function () {
+    $('*[placeholder="Телефон"]*').mask('+7 (000) 000 00 00');
+  });
   //для бэков менялся код!
   var HashValue = location.hash;
   var ht = $('.section-banner .list-item').outerHeight();
@@ -233,9 +235,9 @@ $(document).ready(function () {
 
   $('.customScrollVertical').mCustomScrollbar();
 
-  $('.slickSubmenu').slick({
-    slidesToScroll: 2,
-    variableWidth: true,
-    arrows: false,
-  });
+  // $('.slickSubmenu').slick({
+  //   slidesToScroll: 2,
+  //   variableWidth: true,
+  //   arrows: false,
+  // });
 });
