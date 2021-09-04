@@ -1,0 +1,1018 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+.section-order-redesign {
+  padding: 23px 0 65px;
+  .order-title {
+    color: #000000;
+    font-family: 'CartographSansCF-Regular';
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 33px;
+  }
+  .contact-details {
+    padding: 28px 22px 30px;
+    background-color: #f3f7fd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    margin-bottom: 35px;
+    input::placeholder {
+      color: #808080;
+      font-family: 'CartographSansCF-Regular';
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &__title {
+      color: #000000;
+      font-family: 'CartographSansCF-Regular';
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+    &__form {
+      width: 100%;
+      .name-input {
+        width: 100%;
+        border-radius: 20px;
+        border: 2px solid #a8a6a6;
+        background-color: #ffffff;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        color: #000000;
+        font-family: 'CartographSansCF-Regular';
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+      }
+      .phone-wrapper {
+        margin-bottom: 35px;
+        .phone-input {
+          width: 100%;
+          border-radius: 20px;
+          border: 2px solid #a8a6a6;
+          background-color: #ffffff;
+          padding: 10px 20px;
+          margin-bottom: 25px;
+          color: #000000;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 16px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+        }
+        .send-button {
+          min-width: 190px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #89b3eb;
+          border: none;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 18px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          margin: 0 auto;
+          transition: all 0.7s;
+          cursor: pointer;
+          &:hover,
+          &:focus {
+            background-color: #709bd3;
+          }
+        }
+      }
+      .code-wrapper {
+        .code-input {
+          width: 100%;
+          border-radius: 20px;
+          border: 2px solid #a8a6a6;
+          background-color: #ffffff;
+          padding: 10px 20px;
+          margin-bottom: 20px;
+          color: #000000;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 16px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+        }
+        .confirm-button {
+          min-width: 190px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #89b3eb;
+          border: none;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 18px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          margin: 0 auto;
+          transition: all 0.7s;
+          cursor: pointer;
+          &:hover,
+          &:focus {
+            background-color: #709bd3;
+          }
+        }
+      }
+    }
+  }
+  .delivery-method {
+    padding: 28px 22px 35px;
+    background-color: #fdfbf3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    margin-bottom: 35px;
+    &__title {
+      color: #000000;
+      font-family: 'CartographSansCF-Regular';
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+    .form {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-top: 16px;
+      .btn {
+        font-size: 18px;
+        min-width: 229px;
+        min-height: 40px;
+        border-radius: 0px;
+        font-family: 'CartographSansCF-Bold';
+      }
+      .action {
+        margin: 35px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          color: var(--Color-black);
+          font-size: 18px;
+          font-weight: 700;
+          font-family: 'CartographSansCF-Bold';
+          margin-right: 30px;
+          margin-left: 30px;
+          display: block;
+          margin-bottom: 20px;
+          cursor: pointer;
+          -webkit-transition: all 0.6s;
+          -moz-transition: all 0.6s;
+          -ms-transition: all 0.6s;
+          -o-transition: all 0.6s;
+          transition: all 0.6s;
+
+          &:hover {
+            color: var(--Color-yellow);
+          }
+        }
+
+        button {
+          margin-bottom: 20px;
+        }
+      }
+      span.jcf-radio {
+        min-width: 26px;
+        height: 26px;
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        display: inline-flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 17px;
+        position: relative;
+
+        &:hover {
+          border: 2px solid var(--Color-yellow);
+        }
+
+        &:active {
+          border: 2px solid #000000;
+        }
+
+        &.jcf-checked {
+          span {
+            width: 16px;
+            height: 16px;
+            background-color: #ffb100;
+            border-radius: 50%;
+          }
+        }
+      }
+      span.jcf-select {
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 25px 0 15px;
+        width: 100%;
+        position: relative;
+        margin-top: 5px;
+
+        span {
+          color: rgba(0, 0, 0, 0.5);
+        }
+
+        span.jcf-option {
+          color: #000;
+        }
+      }
+      span.jcf-select-opener {
+        width: 0;
+        height: 0;
+        top: 14px;
+        right: 22px;
+        position: absolute;
+        width: 12px;
+        height: 10px;
+        background-repeat: no-repeat;
+        transition: all 0.6s;
+        background-image: url(../img/arrow-down.svg);
+      }
+      .jcf-drop-active .jcf-select-opener {
+        transform: rotate(-90deg);
+      }
+      .jcf-select-drop.jcf-select-jcf-hidden.jcf-unselectable {
+        position: absolute;
+        top: 41px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        left: -2px;
+        padding: 10px;
+        z-index: 10;
+      }
+      .form-group {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        button {
+          padding-left: 0px;
+          font-size: 18px;
+          font-weight: 700;
+          font-family: 'CartographSansCF-Bold';
+          margin-bottom: 16px;
+          -webkit-transition: all 0.6s;
+          -moz-transition: all 0.6s;
+          -ms-transition: all 0.6s;
+          -o-transition: all 0.6s;
+          transition: all 0.6s;
+
+          &:hover {
+            color: var(--Color-yellow);
+          }
+        }
+
+        .form-column {
+          width: 100%;
+          margin-bottom: 15px;
+          align-items: center;
+          display: inline-flex;
+        }
+      }
+      .group-radio {
+        a {
+          color: #ffb100;
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .title {
+          font-size: 18px;
+          font-weight: 800;
+          font-family: 'CartographSansCF-Bold';
+          display: block;
+          margin-right: 29px;
+        }
+
+        label {
+          span {
+            font-weight: 800;
+            font-family: 'CartographSansCF-Bold';
+          }
+        }
+      }
+      .label {
+        margin-top: 12px;
+      }
+      .form-column.change {
+        margin-top: 12px;
+        flex-wrap: wrap;
+
+        span {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 43px;
+
+          &:nth-of-type(1) {
+            width: 161px;
+          }
+
+          &:nth-of-type(2) {
+            margin-left: 15px;
+          }
+        }
+
+        input {
+          max-width: 54%;
+        }
+      }
+      span.jcf-checkbox {
+        min-width: 26px;
+        height: 26px;
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 17px;
+        position: relative;
+        margin-top: 10px;
+
+        &:hover {
+          border: 2px solid var(--Color-yellow);
+        }
+
+        &:active {
+          border: 2px solid #000000;
+        }
+
+        &.jcf-checked {
+          span {
+            width: 14px;
+            height: 14px;
+            background-color: #ffb100;
+          }
+        }
+      }
+      textarea {
+        max-width: 848px;
+        height: 120px;
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        resize: none;
+        padding: 10px 10px;
+        width: 100%;
+        margin-top: 29px;
+        margin-bottom: 12px;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 16px;
+          font-weight: 500;
+          font-family: 'CartographSansCF-Medium';
+        }
+      }
+      .form-column {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        position: relative;
+      }
+      input {
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        width: 100%;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 16px;
+          font-weight: 500;
+          font-family: 'CartographSansCF-Medium';
+        }
+      }
+      .address {
+        width: 100%;
+        margin: 5px 0;
+        padding: 20px 0 10px;
+        input::placeholder {
+          color: #808080;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 16px;
+          font-weight: 500;
+        }
+        &__input {
+          width: 100%;
+          border-radius: 20px;
+          border: 2px solid #a8a6a6;
+          background-color: #ffffff;
+          padding: 10px 20px;
+          margin-bottom: 30px;
+          color: #000000;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 16px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          &-details {
+            margin-bottom: 20px;
+          }
+        }
+        &__button {
+          margin-bottom: 30px;
+          width: 190px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #89b3eb;
+          border: none;
+          outline: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #ffffff;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 18px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          margin: 0 auto;
+          transition: all 0.7s;
+          cursor: pointer;
+          &:hover,
+          &:focus {
+            background-color: #709bd3;
+          }
+        }
+      }
+    }
+    .map {
+      &-title {
+        display: none;
+      }
+      margin-top: 15px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .notification {
+    padding: 14px 27px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    background-color: #fcf0f0;
+    margin-bottom: 34px;
+    &__text {
+      color: #ff1d1d;
+      font-family: 'CartographSansCF-Regular';
+      font-size: 12px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center;
+    }
+  }
+  .comment-order {
+    background-color: #fdfbf3;
+    padding: 20px 22px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    margin-bottom: 35px;
+    textarea::placeholder {
+      color: #808080;
+      font-family: 'CartographSansCF-Regular';
+      font-size: 16px;
+      font-weight: 500;
+    }
+    &__textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #a8a6a6;
+      background-color: #ffffff;
+      cursor: text;
+      padding: 17px 28px;
+      resize: none;
+      min-height: 180px;
+      font-size: 20px;
+      font-family: 'CartographSansCF-Regular';
+    }
+  }
+  .payment-method {
+    padding: 28px 24px 25px;
+    background-color: #f0fcf8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    margin-bottom: 35px;
+    &__title {
+      color: #000000;
+      font-family: 'CartographSansCF-Regular';
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+    .form {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding-top: 16px;
+      .btn {
+        font-size: 18px;
+        min-width: 229px;
+        min-height: 40px;
+        border-radius: 0px;
+        font-family: 'CartographSansCF-Bold';
+      }
+      .action {
+        margin: 35px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          color: var(--Color-black);
+          font-size: 18px;
+          font-weight: 700;
+          font-family: 'CartographSansCF-Bold';
+          margin-right: 30px;
+          margin-left: 30px;
+          display: block;
+          margin-bottom: 20px;
+          cursor: pointer;
+          -webkit-transition: all 0.6s;
+          -moz-transition: all 0.6s;
+          -ms-transition: all 0.6s;
+          -o-transition: all 0.6s;
+          transition: all 0.6s;
+
+          &:hover {
+            color: var(--Color-yellow);
+          }
+        }
+
+        button {
+          margin-bottom: 20px;
+        }
+      }
+      span.jcf-radio {
+        min-width: 26px;
+        height: 26px;
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        display: inline-flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 17px;
+        position: relative;
+
+        &:hover {
+          border: 2px solid var(--Color-yellow);
+        }
+
+        &:active {
+          border: 2px solid #000000;
+        }
+
+        &.jcf-checked {
+          span {
+            width: 16px;
+            height: 16px;
+            background-color: #ffb100;
+            border-radius: 50%;
+          }
+        }
+      }
+      span.jcf-select {
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 25px 0 15px;
+        width: 100%;
+        position: relative;
+        margin-top: 5px;
+
+        span {
+          color: rgba(0, 0, 0, 0.5);
+        }
+
+        span.jcf-option {
+          color: #000;
+        }
+      }
+      span.jcf-select-opener {
+        width: 0;
+        height: 0;
+        top: 14px;
+        right: 22px;
+        position: absolute;
+        width: 12px;
+        height: 10px;
+        background-repeat: no-repeat;
+        transition: all 0.6s;
+        background-image: url(../img/arrow-down.svg);
+      }
+      .jcf-drop-active .jcf-select-opener {
+        transform: rotate(-90deg);
+      }
+      .jcf-select-drop.jcf-select-jcf-hidden.jcf-unselectable {
+        position: absolute;
+        top: 41px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        left: -2px;
+        padding: 10px;
+        z-index: 10;
+      }
+      .form-group {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 28px;
+        button {
+          padding-left: 0px;
+          font-size: 18px;
+          font-weight: 700;
+          font-family: 'CartographSansCF-Bold';
+          margin-bottom: 16px;
+          -webkit-transition: all 0.6s;
+          -moz-transition: all 0.6s;
+          -ms-transition: all 0.6s;
+          -o-transition: all 0.6s;
+          transition: all 0.6s;
+
+          &:hover {
+            color: var(--Color-yellow);
+          }
+        }
+
+        .form-column {
+          width: 100%;
+          margin-bottom: 15px;
+          align-items: center;
+          display: inline-flex;
+        }
+      }
+      .group-radio {
+        a {
+          color: #ffb100;
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        .title {
+          font-size: 18px;
+          font-weight: 800;
+          font-family: 'CartographSansCF-Bold';
+          display: block;
+          margin-right: 29px;
+        }
+
+        label {
+          span {
+            font-weight: 800;
+            font-family: 'CartographSansCF-Bold';
+          }
+        }
+      }
+      .label {
+        margin-top: 12px;
+      }
+      .form-column.change {
+        margin-top: 12px;
+        flex-wrap: wrap;
+
+        span {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 43px;
+
+          &:nth-of-type(1) {
+            width: 161px;
+          }
+
+          &:nth-of-type(2) {
+            margin-left: 15px;
+          }
+        }
+
+        input {
+          max-width: 54%;
+        }
+      }
+      span.jcf-checkbox {
+        min-width: 26px;
+        height: 26px;
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 17px;
+        position: relative;
+        margin-top: 10px;
+
+        &:hover {
+          border: 2px solid var(--Color-yellow);
+        }
+
+        &:active {
+          border: 2px solid #000000;
+        }
+
+        &.jcf-checked {
+          span {
+            width: 14px;
+            height: 14px;
+            background-color: #ffb100;
+          }
+        }
+      }
+      textarea {
+        max-width: 848px;
+        height: 120px;
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        resize: none;
+        padding: 10px 10px;
+        width: 100%;
+        margin-top: 29px;
+        margin-bottom: 12px;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 16px;
+          font-weight: 500;
+          font-family: 'CartographSansCF-Medium';
+        }
+      }
+      .form-column {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        position: relative;
+      }
+      input {
+        border: 2px solid #000000;
+        background-color: #ffffff;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        width: 100%;
+
+        &::placeholder {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 16px;
+          font-weight: 500;
+          font-family: 'CartographSansCF-Medium';
+        }
+      }
+    }
+  }
+  .option-wrapper {
+    &__link-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 23px;
+      color: #000000;
+      font-family: 'Segoe UI';
+      font-size: 18px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      &:hover,
+      &:focus {
+        color: #e19209;
+      }
+    }
+    &__link-payment {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 266px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #ffb100;
+      font-family: 'Segoe UI';
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      &:hover,
+      &:focus {
+        background-color: #e19209;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .option-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &__link-menu {
+        margin: 0;
+      }
+      &__link-payment {
+        margin: 0;
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    padding: 41px 0 215px;
+    .order-title {
+      font-size: 38px;
+    }
+    .contact-details {
+      padding: 40px 100px;
+      width: 84%;
+      margin: 0 auto 35px;
+      &__title {
+        font-size: 32px;
+        margin-bottom: 35px;
+      }
+      &__form {
+        .name-input {
+          margin-bottom: 15px;
+        }
+        .phone-wrapper {
+          display: flex;
+          margin-bottom: 15px;
+          .phone-input {
+            margin-bottom: 0;
+          }
+          .send-button {
+            margin-left: 26px;
+            margin-bottom: 0;
+          }
+        }
+        .code-wrapper {
+          display: flex;
+          margin-bottom: 0px;
+          .code-input {
+            margin-bottom: 0;
+          }
+          .confirm-button {
+            margin-left: 26px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .delivery-method {
+      padding: 40px 100px;
+      width: 84%;
+      margin: 0 auto 35px;
+      &__title {
+        font-size: 32px;
+      }
+      .form {
+        .address {
+          .address-wrapper {
+            display: flex;
+            position: relative;
+            .address__input {
+              margin-bottom: 15px;
+              &-decktop {
+                position: relative;
+              }
+              &-details:first-of-type {
+                margin-right: 16px;
+              }
+            }
+            .address__button {
+              position: absolute;
+              height: 43px;
+              right: 0;
+              z-index: 10;
+            }
+          }
+        }
+      }
+      .map {
+        margin: 0;
+        &-title {
+          display: block;
+          margin-bottom: 24px;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 18px;
+          font-weight: 800;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: left;
+        }
+      }
+    }
+    .notification {
+      padding: 15px 100px;
+      width: 84%;
+      margin: 0 auto 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__text {
+        font-weight: 500;
+      }
+    }
+    .comment-order {
+      padding: 40px 100px;
+      width: 84%;
+      margin: 0 auto 35px;
+    }
+    .payment-method {
+      padding: 40px 100px;
+      width: 84%;
+      margin: 0 auto 35px;
+      &__title {
+        font-size: 32px;
+      }
+      .form {
+        .form-group {
+          flex-wrap: nowrap;
+          padding-left: 0;
+          justify-content: space-between;
+          .form-column {
+            width: 30%;
+          }
+        }
+      }
+    }
+    .option-wrapper {
+      width: 84%;
+      margin: 0 auto 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__link-menu {
+        margin-right: 17px;
+      }
+      &__link-payment {
+        margin-left: 17px;
+      }
+    }
+  }
+  @media (min-width: 1280px) {
+    .payment-method {
+      .form {
+        .form-group {
+          .form-column {
+            label {
+              min-width: 165px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
