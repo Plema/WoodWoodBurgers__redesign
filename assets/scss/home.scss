@@ -615,6 +615,7 @@
 @media screen and (min-width: 1024px) {
   .section {
     &-banner {
+      margin-top: 180px;
       .list-item {
         min-height: 600px;
 
@@ -702,7 +703,7 @@
     }
 
     &-banner {
-      margin-top: 190px;
+      // margin-top: 180px;
     }
 
     &-product .list-item {
