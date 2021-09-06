@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $('.list-item .list-item__desription .short-description').each(function (i) {
     lengthText = $(this).text().length;
-    if (lengthText > 54) {
-      $(this).text($(this).text().substr(0, 54) + '...');
+    if (lengthText > 75) {
+      $(this).text($(this).text().substr(0, 75) + '...');
     }
   });
 
