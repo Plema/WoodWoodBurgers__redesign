@@ -10,7 +10,7 @@ $(document).ready(function () {
   });
 
   $('.open-menu').on('click', function () {
-    $('.menu-mobile').addClass('active');
+    $('.menu-mobile').toggleClass('active');
   });
 
   $('.menu-mobile')

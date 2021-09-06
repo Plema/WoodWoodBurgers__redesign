@@ -1,5 +1,5 @@
 .menu-mobile {
-  top: 0;
+  top: 60px;
   left: -120%;
   z-index: 99;
   width: 100%;
@@ -39,6 +39,7 @@
     }
 
     li {
+      text-align: center;
       margin-bottom: 10px;
 
       &:hover {
@@ -153,8 +154,8 @@
   }
   .open-menu {
     top: 43%;
-    right: 0px;
-    width: 20px;
+    right: 0;
+    width: 30px;
     height: 24px;
     position: absolute;
     -webkit-transform: translate(0, -50%);
@@ -166,7 +167,7 @@
     &::before {
       content: '';
       top: 7px;
-      //   left: 50%;
+      right: -20px;
       width: 33px;
       height: 3px;
       position: absolute;
@@ -181,9 +182,9 @@
 
     &::after {
       content: '';
-      //   left: 100%;
       width: 9px;
       bottom: -1px;
+      right: -8px;
       height: 3px;
       position: absolute;
       background-color: #000;
@@ -197,6 +198,7 @@
 
     span {
       top: 65%;
+      right: -4px;
       width: 80%;
       height: 2px;
       position: absolute;
@@ -269,9 +271,8 @@
 
   .open-menu {
     top: 43%;
-    // left: 17px;
-    right: 0px;
-    width: 20px;
+    right: 0;
+    width: 30px;
     height: 24px;
     position: absolute;
     -webkit-transform: translate(0, -50%);
@@ -283,7 +284,7 @@
     &::before {
       content: '';
       top: 7px;
-      //   left: 50%;
+      right: -20px;
       width: 33px;
       height: 3px;
       position: absolute;
@@ -298,9 +299,9 @@
 
     &::after {
       content: '';
-      //   right: 10%;
       width: 9px;
       bottom: -1px;
+      right: -8px;
       height: 3px;
       position: absolute;
       background-color: #000;
@@ -314,6 +315,7 @@
 
     span {
       top: 65%;
+      right: -4px;
       width: 23px;
       height: 3px;
       position: absolute;
@@ -386,7 +388,7 @@
 
   .btn {
     margin-left: 25px;
-    border-radius: 0;
+    border-radius: 20px;
     display: none;
   }
 }
@@ -489,11 +491,14 @@ ul.cabinet-dropdown {
     }
 
     .logo {
-      margin-top: 26px;
-      margin-bottom: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       margin-left: 0;
       width: 100%;
       max-width: none;
+      .logo-title {
+        font-size: 40px;
+      }
     }
 
     .navigation {
@@ -565,7 +570,7 @@ ul.cabinet-dropdown {
   }
 
   .header-reguest {
-    padding-top: 0;
+    padding-top: 20px;
 
     &.sticky {
       top: 0;
