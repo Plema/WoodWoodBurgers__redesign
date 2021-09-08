@@ -888,23 +888,37 @@ a {
         .phone-wrapper {
           display: flex;
           margin-bottom: 15px;
+          position: relative;
           .phone-input {
+            position: relative;
             margin-bottom: 0;
           }
           .send-button {
             margin-left: 26px;
             margin-bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+            z-index: 10;
+            height: 43px;
           }
         }
         .code-wrapper {
           display: flex;
           margin-bottom: 0px;
+          position: relative;
           .code-input {
             margin-bottom: 0;
+            position: relative;
           }
           .confirm-button {
             margin-left: 26px;
             margin-bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+            z-index: 10;
+            height: 43px;
           }
         }
       }
