@@ -20,7 +20,4 @@ $(document).ready(function () {
       }
     },
   );
-  $('.contacts-content li').matchHeight({
-            byRow: false
-        }); 
 });
