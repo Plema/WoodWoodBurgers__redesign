@@ -721,7 +721,13 @@
                       <button class="add-product add-product__burgers">Добавить</button>
                     </div>
                     <div class="desription-button__wrapper">
-                      <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>₽</p>
+                      <div class="number__mobile">
+                        <span class="minus minus__burgers"></span>
+                        <input type="text" class="only_number" pattern="^[ 0-9]+$" value="0" size="0">
+                        <span class="plus plus__burgers"></span>
+                      </div>
+                      <button class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>₽</button>
+                      <!-- <p class="desription-price desription-price__burgers"><span class="price-count__burgers">350</span>₽</p> -->
                     </div>
                   </div>
                 </li>
