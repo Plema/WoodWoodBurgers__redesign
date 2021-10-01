@@ -27,6 +27,7 @@ a {
 }
 .section-card-product__new {
   padding: 28px 0 10px;
+
   .back {
     font-size: 18px;
     font-weight: 700;
@@ -107,7 +108,7 @@ a {
         .ingredients-item {
           display: flex;
           align-items: center;
-          width: 50%;
+          width: 100%;
           position: relative;
           padding-left: 23px;
           margin-bottom: 34px;
@@ -239,11 +240,15 @@ a {
     }
   }
   @media (min-width: 768px) {
+    margin-top: 140px;
     .description {
       .add-wrapper {
         .ingredients-list {
           display: flex;
           flex-wrap: wrap;
+          .ingredients-item {
+            width: 30%;
+          }
         }
       }
       .number-wrapper {
@@ -261,6 +266,7 @@ a {
     }
   }
   @media (min-width: 1024px) {
+    margin-top: 180px;
     .inner-wrapper {
       display: flex;
       .slider-wrapper {
@@ -316,6 +322,7 @@ a {
     }
   }
   @media (min-width: 1280px) {
+    margin-top: 180px;
     .inner-wrapper {
       .slider-wrapper {
         padding: 10px 0 10px 62px;
@@ -330,6 +337,9 @@ a {
         }
       }
     }
+  }
+  @media(min-width: 1600px) {
+      margin-top: 210px;
   }
 }
 .section-recommend-to-order {

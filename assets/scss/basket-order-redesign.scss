@@ -856,6 +856,7 @@ a {
     }
   }
   @media (min-width: 768px) {
+    margin-top: 140px;
     .option-wrapper {
       display: flex;
       justify-content: space-around;
@@ -870,6 +871,7 @@ a {
   }
   @media (min-width: 1024px) {
     padding: 41px 0 215px;
+    margin-top: 180px;
     .order-title {
       font-size: 38px;
     }
@@ -1017,6 +1019,7 @@ a {
     }
   }
   @media (min-width: 1280px) {
+    margin-top: 180px;
     .payment-method {
       .form {
         .form-group {
@@ -1028,5 +1031,8 @@ a {
         }
       }
     }
+  }
+  @media (min-width: 1600px) {
+    margin-top: 210px;
   }
 }

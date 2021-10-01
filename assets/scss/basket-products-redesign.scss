@@ -425,6 +425,7 @@ a {
     }
   }
   @media (min-width: 768px) {
+    margin-top: 140px;
     .basket-list__wrapper {
       padding: 20px;
     }
@@ -451,6 +452,7 @@ a {
   }
   @media (min-width: 1024px) {
     padding: 40px 0 134px;
+    margin-top: 180px;
     .basket-title {
       font-size: 38px;
       margin-bottom: 44px;
@@ -616,5 +618,8 @@ a {
         }
       }
     }
+  }
+  @media (min-width: 1600px) {
+    margin-top: 210px;
   }
 }

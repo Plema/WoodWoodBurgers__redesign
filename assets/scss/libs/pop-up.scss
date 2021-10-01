@@ -484,6 +484,8 @@
             border-radius: 10px;
             margin-right: 15px;
             width: 31%;
+            height: 80px;
+
             .desription-img__link {
               width: 100%;
               height: 100%;
@@ -492,6 +494,7 @@
                 min-width: 80px;
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
               }
             }
           }
@@ -499,7 +502,7 @@
             display: flex;
             flex-wrap: wrap;
             height: 100%;
-            width: 68%;
+            width: 60%;
             .decvription-text {
               display: flex;
               justify-content: space-between;
@@ -676,9 +679,11 @@
             img {
               width: 100px;
               height: 100px;
+              object-fit: cover;
             }
           }
           &__description {
+            width: 60%;
             .description-title {
               color: #000000;
               font-family: 'CartographSansCF-Regular';
@@ -1175,6 +1180,15 @@
       .recommend-inner {
         .recommend-list {
           .list-item {
+            &__img {
+            width: 100px;
+            height: 100px;
+            img {
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+            }
+            }
             &__description {
               .decvription-text {
                 margin-bottom: 37px;
@@ -1298,6 +1312,9 @@
       .recommend-inner {
         .recommend-list {
           .list-item {
+            &__img {
+            height: 140px;
+            }
             &__description {
               .decvription-text {
                 margin-bottom: 61px;
@@ -1318,6 +1335,19 @@
             align-items: center;
             justify-content: space-between;
             width: 475px;
+             &__wrapper{
+              width: 90%;
+            }
+            &__img {
+            margin-right: 22px;
+            width: 100px;
+            height: 100px;
+            img {
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+            }
+          }
           }
         }
       }
@@ -1421,13 +1451,15 @@
           padding: 0 12px 0 0;
           .list-item {
             max-width: 326px;
-            height: 107px;
+            height: fit-content;
             padding: 14px 32px 14px 12px;
             &:not(:last-child) {
               margin-bottom: 19px;
             }
             &__img {
               margin-right: 28px;
+            height: 80px;
+
             }
             &__description {
               .decvription-text {
@@ -1671,7 +1703,7 @@
       max-height: 90%;
       width: 453px;
       transform: translate(0%, -50%);
-      left: 60%;
+      left: 54%;
       top: 53%;
       .modall-title {
         font-size: 24px;
@@ -1685,6 +1717,16 @@
             align-items: center;
             justify-content: space-between;
             width: 392px;
+            &__img {
+            margin-right: 22px;
+            width: 100px;
+            height: 100px;
+            img {
+              width: 100px;
+              height: 100px;
+              object-fit: cover;
+            }
+          }
             &__description {
               .description-title {
                 font-family: 'CartographSansCF-Regular';
