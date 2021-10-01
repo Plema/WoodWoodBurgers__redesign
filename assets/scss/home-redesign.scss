@@ -271,6 +271,8 @@ a {
             font-style: normal;
             letter-spacing: normal;
             line-height: normal;
+            border: none;
+            outline: none;
             &__burgers {
               // background-color: #f2b03d;
               background-color: #9b9b9b;
@@ -350,11 +352,223 @@ a {
         }
       }
     }
+    .number__mobile {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      min-width: 50%;
+      margin: 0 auto 2px;
+      span.minus {
+        background-color: #fff;
+        display: inline-flex;
+        cursor: pointer;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 20px;
+        position: relative;
+        border: 2px solid var(--Color-black);
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -ms-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s;
+        opacity: 1;
+
+        &.opacity {
+          opacity: 1;
+        }
+        &__burgers {
+          &:hover {
+            border: 2px solid var(--Color-yellow);
+            &::before {
+              background-color: var(--Color-yellow);
+            }
+          }
+        }
+        &__beverages {
+          &:hover {
+            border: 2px solid #30d0cd;
+            &::before {
+              background-color: #30d0cd;
+            }
+          }
+        }
+        &__pizza {
+          &:hover {
+            border: 2px solid #feb3bd;
+            &::before {
+              background-color: #feb3bd;
+            }
+          }
+        }
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 10px;
+          height: 2px;
+          background-color: var(--Color-black);
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%;
+        }
+      }
+
+      input {
+        width: 61px;
+        height: 43px;
+        border-radius: 3px;
+        background-color: transparent;
+        text-align: center;
+        margin: 0;
+        font-family: 'CartographSansCF-Regular';
+        font-size: 20px;
+        font-weight: 700;
+        border: none;
+        opacity: 1;
+        &.opacity {
+          opacity: 1;
+        }
+      }
+
+      span.plus {
+        background-color: #fff;
+        display: inline-flex;
+        cursor: pointer;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        position: relative;
+        border: 2px solid var(--Color-black);
+        cursor: pointer;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -ms-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s;
+        opacity: 1;
+
+        &.opacity {
+          opacity: 1;
+        }
+        &__burgers {
+          &:hover {
+            border: 2px solid var(--Color-yellow);
+
+            &::before,
+            &::after {
+              background: var(--Color-yellow);
+            }
+          }
+        }
+        &__beverages {
+          &:hover {
+            border: 2px solid #30d0cd;
+            &::before,
+            &::after {
+              background-color: #30d0cd;
+            }
+          }
+        }
+        &__pizza {
+          &:hover {
+            border: 2px solid #feb3bd;
+            &::before,
+            &::after {
+              background-color: #feb3bd;
+            }
+          }
+        }
+
+        &::before,
+        &::after {
+          content: '';
+          top: 50%;
+          left: 50%;
+          width: 12px;
+          height: 2px;
+          position: absolute;
+          background: var(--Color-black);
+          transform: translate(-50%, -50%);
+        }
+
+        &::before {
+          -webkit-transform: rotate(-90deg) translate(1px, -6px);
+          -moz-transform: rotate(-90deg) translate(1px, -6px);
+          -ms-transform: rotate(-90deg) translate(1px, -6px);
+          -o-transform: rotate(-90deg) translate(1px, -6px);
+          transform: rotate(-90deg) translate(1px, -6px);
+        }
+
+        &::after {
+          -webkit-transform: rotate(0deg) translate(-50%, -50%);
+          -moz-transform: rotate(0deg) translate(-50%, -50%);
+          -ms-transform: rotate(0deg) translate(-50%, -50%);
+          -o-transform: rotate(0deg) translate(-50%, -50%);
+          transform: rotate(0deg) translate(-50%, -50%);
+        }
+      }
+      .add-product {
+        cursor: pointer;
+        width: 90px;
+        height: 36px;
+        border-radius: 20px;
+        color: #000000;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-align: left;
+        font-family: 'CartographSansCF-Regular';
+        outline: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        transition: all 0.7s;
+        &__burgers {
+          background-color: #f2b03d;
+          &:hover,
+          &:focus {
+            background-color: #e19209;
+            color: #fff;
+          }
+        }
+        &__beverages {
+          background-color: #30d0cd;
+          &:hover,
+          &:focus {
+            background-color: #02a7a4;
+            color: #fff;
+          }
+        }
+        &__pizza {
+          background-color: #feb3bd;
+          &:hover,
+          &:focus {
+            background-color: #da8f99;
+            color: #fff;
+          }
+        }
+      }
+    }
     .add-ingrediets,
     .short-description,
     .full-description,
     .number {
       display: none;
+      &__mobile {
+        display: flex;
+        margin-bottom: 5px;
+        justify-content: center;
+        input {
+          width: 40px;
+        }
+      }
     }
     .load-more {
       cursor: pointer;
@@ -437,12 +651,14 @@ a {
                 color: #fff;
               }
             }
+
             .number {
               display: flex;
               padding: 0 10px 0 16px;
             }
             .desription-button__wrapper {
               padding: 0;
+
               .desription-price {
                 border-radius: 0 0 10px 10px;
               }
@@ -887,6 +1103,9 @@ a {
             }
           }
         }
+      }
+      .number__mobile {
+        display: none;
       }
       .load-more {
         display: none;

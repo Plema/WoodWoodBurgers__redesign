@@ -658,6 +658,15 @@ ul.cabinet-dropdown {
   .header-reguest {
     padding: 0 20px 23px;
     min-height: 180px;
+    .navigation {
+      .logo {
+        width: 60%;
+      }
+      .menu {
+        width: 40%;
+        justify-content: flex-end;
+      }
+    }
   }
 }
 
