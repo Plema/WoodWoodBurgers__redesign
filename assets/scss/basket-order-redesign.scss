@@ -21,6 +21,268 @@ a {
     line-height: normal;
     margin-bottom: 33px;
   }
+  .bonus {
+    padding: 34px 22px;
+    background-color: #f0fcf8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    margin-bottom: 35px;
+    height: auto;
+    &-title {
+      font-size: 18px;
+      margin-bottom: 35px;
+    }
+    .uds-inner {
+      margin-bottom: 35px;
+      .uds-wrapper {
+        margin-bottom: 20px;
+        &__title {
+          color: #000000;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 18px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+        }
+      }
+      .input-wrapper {
+        margin-bottom: 33px;
+        &__placeholder {
+          width: 100%;
+          max-width: 299px;
+          height: 40px;
+          border-radius: 20px;
+          border: 2px solid #a8a6a6;
+          background-color: #ffffff;
+          opacity: 1;
+          padding: 10px 15px;
+          margin-bottom: 25px;
+          transition: all 0.7s;
+          &:hover {
+            border-color: #a3f3b1;
+          }
+        }
+        &__button {
+          width: 200px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #a3f3b1;
+          color: #000000;
+          font-size: 18px;
+          font-family: 'CartographSansCF-Regular';
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          cursor: pointer;
+          transition: all 0.7s;
+          border: none;
+          outline: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          &:hover,
+          &:focus {
+            background-color: #51be67;
+            color: #fff;
+          }
+        }
+      }
+      .link-wrapper {
+        .uds-link {
+          color: #28cb43;
+          text-decoration: underline;
+          transition: all 0.7s;
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 14px;
+            background-image: url(../img/green-arrow.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            transform: translate(0, -50%);
+            bottom: -4px;
+          }
+          &:hover {
+            color: #51be67;
+          }
+        }
+      }
+    }
+    .bonus-inner {
+      .bonus-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        &__title {
+          color: #000000;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 18px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+        }
+        &__number {
+          color: #28cb43;
+          font-family: 'CartographSansCF-Regular';
+          font-size: 18px;
+          font-weight: 500;
+          .count-bonus {
+            font-family: 'CartographSansCF-Regular';
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+      .input-wrapper {
+        margin-bottom: 33px;
+        &__placeholder {
+          width: 100%;
+          max-width: 299px;
+          height: 40px;
+          border-radius: 20px;
+          border: 2px solid #a8a6a6;
+          background-color: #ffffff;
+          opacity: 1;
+          padding: 10px 15px;
+          margin-bottom: 25px;
+          transition: all 0.7s;
+
+          &:hover {
+            border-color: #ffb100;
+          }
+        }
+        &__button {
+          width: 200px;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #fcbc27;
+          color: #000000;
+          font-size: 18px;
+          font-family: 'CartographSansCF-Regular';
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          cursor: pointer;
+          transition: all 0.7s;
+          border: none;
+          outline: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          &:hover,
+          &:focus {
+            background-color: #ffb100;
+            color: #fff;
+          }
+        }
+      }
+      .order-wrapper {
+        &__title {
+          color: #000000;
+          font-size: 24px;
+          font-family: 'CartographSansCF-Regular';
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .price-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          position: relative;
+          &::after {
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 40px;
+            background-color: #a8a6a6;
+            font-weight: 400;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+          }
+          .old-price {
+            font-family: 'CartographSansCF-Regular';
+            color: #ffb100;
+            text-decoration: line-through;
+            font-size: 28px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 120px;
+            &__span {
+              color: #ffb100;
+              font-family: 'CartographSansCF-Regular';
+              font-size: 28px;
+              font-weight: 700;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: center;
+            }
+          }
+          .new-price {
+            font-family: 'CartographSansCF-Regular';
+            color: #28cb43;
+            font-size: 42px;
+            font-weight: bold;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 120px;
+            margin-right: -12px;
+            &__span {
+              color: #28cb43;
+              font-family: 'CartographSansCF-Regular';
+              font-size: 42px;
+              font-weight: bold;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: normal;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .notification {
+    padding: 28px 70px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    background-color: #fcf0f0;
+    margin-bottom: 34px;
+    &__text {
+      color: #ff1d1d;
+      font-family: 'CartographSansCF-Regular';
+      font-size: 14px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: center;
+    }
+  }
   .contact-details {
     padding: 28px 22px 30px;
     background-color: #f3f7fd;
@@ -970,12 +1232,116 @@ a {
         margin: 0;
       }
     }
+    .bonus {
+      padding: 28px 22px 30px;
+      .bonus-content {
+        display: flex;
+        justify-content: space-between;
+        .uds-inner {
+          width: 48%;
+          margin-bottom: 0;
+          .uds-wrapper {
+            min-height: 25px;
+            &__title {
+              padding-left: 20px;
+            }
+          }
+          .input-wrapper {
+            position: relative;
+            margin-bottom: 35px;
+            &__placeholder {
+              max-width: 100%;
+              position: relative;
+              margin-bottom: 0;
+            }
+            &__button {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 150px;
+              z-index: 2;
+            }
+          }
+          .link-wrapper {
+            padding-left: 20px;
+            width: 300px;
+          }
+        }
+        .bonus-inner {
+          width: 48%;
+          .bonus-wrapper {
+            min-height: 25px;
+            &__title {
+              padding-left: 20px;
+            }
+          }
+          .input-wrapper {
+            position: relative;
+            margin-bottom: 35px;
+            &__placeholder {
+              max-width: 100%;
+              position: relative;
+              margin-bottom: 0;
+            }
+            &__button {
+              position: absolute;
+              right: 0;
+              top: 0;
+              width: 150px;
+              z-index: 2;
+            }
+          }
+          .order-wrapper {
+            &__title {
+              margin-bottom: 20px;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1024px) {
     padding: 41px 0 215px;
     margin-top: 180px;
     .order-title {
       font-size: 38px;
+    }
+    .bonus {
+      width: 84%;
+      margin: 0 auto 35px;
+      .bonus-content {
+        .bonus-inner {
+          .order-wrapper {
+            .price-wrapper {
+              justify-content: flex-end;
+              &::after {
+                display: none;
+              }
+              .old-price {
+                text-align: left;
+              }
+              .new-price {
+                text-align: right;
+                margin-right: 0px;
+                margin-left: 40px;
+                position: relative;
+                &::after {
+                  position: absolute;
+                  content: '';
+                  width: 1px;
+                  height: 38px;
+                  background-color: #a8a6a6;
+                  font-weight: 400;
+                  transform: translate(-50%, -50%);
+                  left: -30px;
+                  top: 55%;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     .contact-details {
       padding: 40px 100px;
@@ -1161,6 +1527,9 @@ a {
   }
   @media (min-width: 1280px) {
     margin-top: 180px;
+    .bonus {
+      padding: 40px 100px;
+    }
     .payment-method {
       .form {
         .form-group {
