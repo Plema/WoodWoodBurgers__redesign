@@ -85,7 +85,7 @@
 
       input,
       textarea {
-        border: 2px solid #000000;
+        // border: 2px solid #000000;
         background-color: #ffffff;
         max-width: 416px;
         min-height: 40px;
@@ -93,7 +93,13 @@
         align-items: center;
         padding: 0 10px;
         width: 100%;
-
+        border-radius: 20px;
+        border: 2px solid #a8a6a6;
+        background-color: #ffffff;
+        &:hover,
+        &:focus {
+          border-color: #89b3eb;
+        }
         &::placeholder {
           color: rgba(0, 0, 0, 0.5);
           font-size: 16px;
@@ -176,7 +182,103 @@
     }
   }
 }
-
+.modall-review,
+.modall-address {
+  .modall-body {
+    background-color: #f3f7fd;
+    padding: 34px 22px;
+    h4 {
+      font-size: 18px;
+      text-align: left;
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+      .form-content {
+        width: 100%;
+        .form-column {
+          input {
+            font-family: 'CartographSansCF-Regular';
+            font-size: 16px;
+            border-radius: 20px;
+            border: 2px solid #a8a6a6;
+            background-color: #ffffff;
+            opacity: 1;
+            outline: none;
+            transition: all 0.7s;
+            &:hover,
+            &:focus {
+              border-color: #89b3eb;
+            }
+          }
+        }
+      }
+      .action {
+        justify-content: center;
+        .btn {
+          background-color: #89b3eb;
+          outline: none;
+          border: none;
+          color: #fff;
+          border-radius: 20px;
+          transition: all 0.7s;
+          &:hover {
+            background-color: #609ef0;
+          }
+        }
+      }
+    }
+  }
+}
+.modall-code-sms,
+.modall-promo,
+.modall-code {
+  .modall-body {
+    background-color: #f3f7fd;
+    padding: 34px 22px;
+    h4 {
+      font-size: 18px;
+      text-align: center;
+      width: 100%;
+    }
+    .form {
+      width: 100%;
+      .form-content {
+        width: 100%;
+        .form-column {
+          input {
+            font-family: 'CartographSansCF-Regular';
+            font-size: 16px;
+            border-radius: 20px;
+            border: 2px solid #a8a6a6;
+            background-color: #ffffff;
+            opacity: 1;
+            outline: none;
+            transition: all 0.7s;
+            &:hover,
+            &:focus {
+              border-color: #89b3eb;
+            }
+          }
+        }
+      }
+      .action {
+        justify-content: center;
+        .btn {
+          background-color: #89b3eb;
+          outline: none;
+          border: none;
+          color: #fff;
+          border-radius: 20px;
+          transition: all 0.7s;
+          &:hover {
+            background-color: #609ef0;
+          }
+        }
+      }
+    }
+  }
+}
 .modall-basket {
   .modall-body {
     max-width: 322px;
@@ -366,24 +468,31 @@
 
 .modall-over {
   .modall-body {
-    padding: 20px 3%;
+    padding: 34px 22px;
+    background-color: #fcf0f0;
 
     h4 {
-      margin-bottom: 0;
+      margin-bottom: 10px;
       width: 100%;
+      text-align: center;
+      font-size: 22px;
     }
 
     .description {
       display: block;
+      text-align: center;
       width: 100%;
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 500;
-      color: #ccc;
+      color: #222222;
     }
 
     ul {
       width: 100%;
       margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     li {
@@ -396,44 +505,71 @@
       &::before {
         position: absolute;
         content: '';
-        width: 6px;
-        height: 6px;
+        width: 8px;
+        height: 8px;
         border-radius: 50%;
-        background-color: #ffb100;
+        background-color: #fa5555;
         top: 8px;
         left: 0;
       }
     }
 
     .action {
-      width: 100%;
       display: flex;
-      justify-content: flex-end;
-      margin-top: 10px;
-    }
-
-    .btn {
-      min-width: 176px;
+      justify-content: center;
+      width: 100%;
+      .btn {
+        background-color: #ffb100;
+        outline: none;
+        border: none;
+        color: #fff;
+        border-radius: 20px;
+        transition: all 0.7s;
+        width: 100%;
+        max-width: 70%;
+        &:hover {
+          background-color: #ffb300c9;
+        }
+      }
     }
   }
 }
 
 .modall-accepted {
   .modall-body {
-    padding: 20px 20px 31px;
+    padding: 34px 22px;
+    background-color: #fdfbf3;
 
     h4 {
+      font-weight: bold;
       margin-top: 37px;
       text-align: center;
       margin-bottom: 10px;
       font-size: 16px;
-      width: 72%;
+      width: 80%;
       line-height: 21px;
 
       span {
         color: #ffb100;
         font-size: 19px;
         font-weight: 800;
+      }
+    }
+    .action {
+      justify-content: center;
+
+      .btn {
+        background-color: #ffb100;
+        outline: none;
+        border: none;
+        color: #fff;
+        border-radius: 20px;
+        transition: all 0.7s;
+        width: 200px;
+        max-width: 200px;
+        &:hover {
+          background-color: #ffb300c9;
+        }
       }
     }
   }
@@ -1181,13 +1317,13 @@
         .recommend-list {
           .list-item {
             &__img {
-            width: 100px;
-            height: 100px;
-            img {
               width: 100px;
               height: 100px;
-              object-fit: cover;
-            }
+              img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+              }
             }
             &__description {
               .decvription-text {
@@ -1203,7 +1339,7 @@
 @media screen and (min-width: 768px) {
   .modall {
     .modall-body {
-      max-height: 472px;
+      max-height: 455px;
 
       .form-group {
         display: flex;
@@ -1313,7 +1449,7 @@
         .recommend-list {
           .list-item {
             &__img {
-            height: 140px;
+              height: 140px;
             }
             &__description {
               .decvription-text {
@@ -1335,19 +1471,19 @@
             align-items: center;
             justify-content: space-between;
             width: 475px;
-             &__wrapper{
+            &__wrapper {
               width: 90%;
             }
             &__img {
-            margin-right: 22px;
-            width: 100px;
-            height: 100px;
-            img {
+              margin-right: 22px;
               width: 100px;
               height: 100px;
-              object-fit: cover;
+              img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+              }
             }
-          }
           }
         }
       }
@@ -1356,6 +1492,72 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .modall-address {
+    .modall-body {
+      width: 768px;
+      max-width: 768px;
+      overflow-y: hidden;
+      h4 {
+        width: 90%;
+        font-size: 20px;
+      }
+      .form {
+        width: 90%;
+        max-width: 90%;
+        input {
+          max-width: 100%;
+        }
+      }
+      .form-group {
+        width: 100%;
+        .form-column {
+          width: 45%;
+          input {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .modall-code-sms,
+  .modall-promo,
+  .modall-code {
+    .modall-body {
+      h4 {
+        width: 90%;
+        font-size: 20px;
+      }
+    }
+  }
+  .modall-over {
+    .modall-body {
+      padding: 54px 22px 34px;
+      background-color: #fcf0f0;
+
+      h4 {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+      }
+
+      .description {
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        color: #222222;
+      }
+
+      .action {
+        .btn {
+          max-width: 60%;
+          height: 54px;
+        }
+      }
+    }
+  }
   .modall-basket {
     .modall-body {
       max-width: 837px;
@@ -1458,8 +1660,7 @@
             }
             &__img {
               margin-right: 28px;
-            height: 80px;
-
+              height: 80px;
             }
             &__description {
               .decvription-text {
@@ -1718,15 +1919,15 @@
             justify-content: space-between;
             width: 392px;
             &__img {
-            margin-right: 22px;
-            width: 100px;
-            height: 100px;
-            img {
+              margin-right: 22px;
               width: 100px;
               height: 100px;
-              object-fit: cover;
+              img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+              }
             }
-          }
             &__description {
               .description-title {
                 font-family: 'CartographSansCF-Regular';
