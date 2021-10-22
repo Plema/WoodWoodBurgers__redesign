@@ -36,6 +36,13 @@ a {
       margin-bottom: 35px;
       .uds-wrapper {
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        .logo-uds {
+          width: 60px;
+          height: 70px;
+          margin-right: 15px;
+        }
         &__title {
           color: #000000;
           font-family: 'CartographSansCF-Regular';
@@ -92,32 +99,33 @@ a {
       }
       .link-wrapper {
         .uds-link {
-          color: #28cb43;
+          color: #2d2d2d;
           text-decoration: underline;
           transition: all 0.7s;
           position: relative;
-          &::after {
-            content: '';
-            position: absolute;
-            width: 24px;
-            height: 14px;
-            background-image: url(../img/green-arrow.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center;
-            transform: translate(0, -50%);
-            bottom: -4px;
-          }
+          transition: all 0.7s;
           &:hover {
-            color: #51be67;
+            color: #357a43;
           }
+          // &::after {
+          //   content: '';
+          //   position: absolute;
+          //   width: 24px;
+          //   height: 14px;
+          //   background-image: url(../img/green-arrow.svg);
+          //   background-repeat: no-repeat;
+          //   background-size: contain;
+          //   background-position: center;
+          //   transform: translate(0, -50%);
+          //   bottom: -4px;
+          // }
         }
       }
     }
     .bonus-inner {
       .bonus-wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         margin-bottom: 20px;
         &__title {
@@ -128,9 +136,10 @@ a {
           font-style: normal;
           letter-spacing: normal;
           line-height: normal;
+          margin-right: 20px;
         }
         &__number {
-          color: #28cb43;
+          color: #000000;
           font-family: 'CartographSansCF-Regular';
           font-size: 18px;
           font-weight: 500;
@@ -240,7 +249,7 @@ a {
           }
           .new-price {
             font-family: 'CartographSansCF-Regular';
-            color: #28cb43;
+            color: #2d2d2d;
             font-size: 42px;
             font-weight: bold;
             font-style: normal;
@@ -252,7 +261,7 @@ a {
             min-width: 120px;
             margin-right: -12px;
             &__span {
-              color: #28cb43;
+              color: #2d2d2d;
               font-family: 'CartographSansCF-Regular';
               font-size: 42px;
               font-weight: bold;
@@ -1241,10 +1250,8 @@ a {
           width: 48%;
           margin-bottom: 0;
           .uds-wrapper {
-            min-height: 25px;
-            &__title {
-              padding-left: 20px;
-            }
+            min-height: 70px;
+            padding-left: 20px;
           }
           .input-wrapper {
             position: relative;
@@ -1270,7 +1277,7 @@ a {
         .bonus-inner {
           width: 48%;
           .bonus-wrapper {
-            min-height: 25px;
+            min-height: 70px;
             &__title {
               padding-left: 20px;
             }
