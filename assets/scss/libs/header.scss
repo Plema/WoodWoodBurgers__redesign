@@ -632,6 +632,8 @@ ul.cabinet-dropdown {
 
   .header-reguest.sticky {
     top: 0;
+    min-height: fit-content;
+    padding-bottom: 5px;
   }
 }
 
@@ -748,6 +750,8 @@ ul.cabinet-dropdown {
   .header-reguest {
     &.sticky {
       top: 0;
+      min-height: fit-content;
+      padding-bottom: 5px;
     }
   }
 }
