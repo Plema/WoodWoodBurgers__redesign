@@ -11,6 +11,7 @@ $(document).ready(function () {
 
   $('.open-menu').on('click', function () {
     $('.menu-mobile').toggleClass('active');
+    $('.body').toggleClass('lock');
   });
 
   $('.menu-mobile')

@@ -26,6 +26,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
   position: relative;
