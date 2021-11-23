@@ -1,4 +1,9 @@
 @import url(mCustomScrollbar.css);
+
+.lock {
+  overflow: hidden;
+}
+
 .menu-mobile {
   top: 0;
   left: -120%;
